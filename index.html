@@ -546,82 +546,82 @@ footer{background:var(--dark);padding:22px 52px;display:flex;justify-content:spa
 }
 
 /* ── CERT CREDENTIALS ── */
-.cred-layout{{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start;}}
-.cred-block-head{{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;}}
-.cred-block-title{{font-size:14px;font-weight:600;color:var(--dark);}}
-.cred-block-sub{{font-size:11.5px;color:var(--muted);margin-top:2px;}}
-.cert-badge-aci{{font-size:10px;font-weight:600;color:#1a3a8a;background:#e8f0fb;border:1px solid #b8cce8;padding:3px 10px;border-radius:20px;white-space:nowrap;}}
+.cred-layout{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start;}
+.cred-block-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;}
+.cred-block-title{font-size:14px;font-weight:600;color:var(--dark);}
+.cred-block-sub{font-size:11.5px;color:var(--muted);margin-top:2px;}
+.cert-badge-aci{font-size:10px;font-weight:600;color:#1a3a8a;background:#e8f0fb;border:1px solid #b8cce8;padding:3px 10px;border-radius:20px;white-space:nowrap;}
 
-.cert-stack{{display:flex;flex-direction:column;gap:0;border:1px solid var(--rule);border-radius:var(--radius);overflow:hidden;}}
-.cert-row{{
+.cert-stack{display:flex;flex-direction:column;gap:0;border:1px solid var(--rule);border-radius:var(--radius);overflow:hidden;}
+.cert-row{
   display:grid;grid-template-columns:64px 1fr auto;gap:12px;align-items:center;
   padding:10px 14px;
   border-bottom:1px solid var(--rule);
   cursor:pointer;background:#fff;
   transition:background .15s;
-}}
-.cert-row:last-child{{border-bottom:none;}}
-.cert-row:hover{{background:var(--gold-p);}}
-.cert-thumb{{
+}
+.cert-row:last-child{border-bottom:none;}
+.cert-row:hover{background:var(--gold-p);}
+.cert-thumb{
   width:64px;height:44px;border-radius:4px;
   overflow:hidden;border:1px solid var(--rule);
   flex-shrink:0;
-}}
-.cert-thumb img{{width:100%;height:100%;object-fit:cover;object-position:top center;}}
-.cert-row-title{{font-size:12.5px;font-weight:600;color:var(--dark);margin-bottom:3px;}}
-.cert-row-meta{{font-size:11px;color:var(--muted);}}
-.cert-row-action{{display:flex;align-items:center;gap:7px;flex-shrink:0;}}
-.cert-pill{{font-size:9.5px;padding:2px 8px;border-radius:10px;background:var(--bg);border:1px solid var(--rule);color:var(--muted);}}
-.cert-pill-gold{{background:var(--gold-p);border-color:var(--gold-b);color:var(--gold);font-weight:600;}}
-.cert-open-icon{{font-size:13px;color:var(--muted);}}
-.cert-row:hover .cert-open-icon{{color:var(--gold);}}
+}
+.cert-thumb img{width:100%;height:100%;object-fit:cover;object-position:top center;}
+.cert-row-title{font-size:12.5px;font-weight:600;color:var(--dark);margin-bottom:3px;}
+.cert-row-meta{font-size:11px;color:var(--muted);}
+.cert-row-action{display:flex;align-items:center;gap:7px;flex-shrink:0;}
+.cert-pill{font-size:9.5px;padding:2px 8px;border-radius:10px;background:var(--bg);border:1px solid var(--rule);color:var(--muted);}
+.cert-pill-gold{background:var(--gold-p);border-color:var(--gold-b);color:var(--gold);font-weight:600;}
+.cert-open-icon{font-size:13px;color:var(--muted);}
+.cert-row:hover .cert-open-icon{color:var(--gold);}
 
 /* LIGHTBOX */
-.cert-lb{{
+.cert-lb{
   position:fixed;inset:0;z-index:9999;
   background:rgba(10,15,25,0.85);
   display:none;align-items:center;justify-content:center;
   padding:20px;
-}}
-.cert-lb.open{{display:flex;}}
-.cert-lb-box{{
+}
+.cert-lb.open{display:flex;}
+.cert-lb-box{
   position:relative;max-width:820px;width:100%;
   background:#fff;border-radius:10px;
   overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,0.4);
-}}
-.cert-lb-img-wrap img{{width:100%;display:block;}}
-.cert-lb-caption{{
+}
+.cert-lb-img-wrap img{width:100%;display:block;}
+.cert-lb-caption{
   display:flex;align-items:center;justify-content:space-between;
   padding:12px 18px;background:#fff;border-top:1px solid var(--rule);
   flex-wrap:wrap;gap:6px;
-}}
-#certLbTitle{{font-size:13px;font-weight:600;color:var(--dark);}}
-#certLbMeta{{font-size:11.5px;color:var(--muted);}}
-.cert-lb-dots{{display:flex;justify-content:center;gap:7px;padding:10px;background:#fff;}}
-.cert-dot{{
+}
+#certLbTitle{font-size:13px;font-weight:600;color:var(--dark);}
+#certLbMeta{font-size:11.5px;color:var(--muted);}
+.cert-lb-dots{display:flex;justify-content:center;gap:7px;padding:10px;background:#fff;}
+.cert-dot{
   width:8px;height:8px;border-radius:50%;
   background:var(--rule);cursor:pointer;transition:background .15s;
-}}
-.cert-dot.active{{background:var(--gold);}}
-.cert-lb-close{{
+}
+.cert-dot.active{background:var(--gold);}
+.cert-lb-close{
   position:absolute;top:10px;right:12px;z-index:2;
   background:rgba(0,0,0,0.5);color:#fff;border:none;
   width:30px;height:30px;border-radius:50%;font-size:14px;
   cursor:pointer;display:flex;align-items:center;justify-content:center;
-}}
-.cert-lb-prev,.cert-lb-next{{
+}
+.cert-lb-prev,.cert-lb-next{
   position:absolute;top:50%;transform:translateY(-50%);z-index:2;
   background:rgba(0,0,0,0.5);color:#fff;border:none;
   width:36px;height:36px;border-radius:50%;font-size:18px;
   cursor:pointer;display:flex;align-items:center;justify-content:center;
-}}
-.cert-lb-prev{{left:10px;}}
-.cert-lb-next{{right:10px;}}
-.cert-lb-prev:hover,.cert-lb-next:hover,.cert-lb-close:hover{{background:var(--gold);}}
-@media(max-width:760px){{
-  .cred-layout{{grid-template-columns:1fr;}}
-  .cert-lb-box{{max-width:100%;}}
-}}
+}
+.cert-lb-prev{left:10px;}
+.cert-lb-next{right:10px;}
+.cert-lb-prev:hover,.cert-lb-next:hover,.cert-lb-close:hover{background:var(--gold);}
+@media(max-width:760px){
+  .cred-layout{grid-template-columns:1fr;}
+  .cert-lb-box{max-width:100%;}
+}
 
 /* ── CERT STACK ── */
 .cred-cols{display:grid;grid-template-columns:1fr 1fr 1fr;gap:24px;align-items:start;}
@@ -686,13 +686,13 @@ footer{background:var(--dark);padding:22px 52px;display:flex;justify-content:spa
     <div class="hero-left">
       <div class="eyebrow"><span>VP / SVP — Aviation Transformation &amp; AI Strategy</span></div>
       <h1 class="hero-name">Vishal Srivastava</h1>
-      <p class="hero-title">Turning Aviation Complexity Into Measurable Business Outcomes</p>
-      <p class="hero-desc">25 years leading digital transformation across airlines and airports — biometric passenger processing, baggage systems, self-service technologies, and operational modernisation. My understanding comes from having worked inside these systems, not just around them.</p>
+      <p class="hero-title">Where Airline Operations Expertise Meets Enterprise IT Delivery</p>
+      <p class="hero-desc">25 years at the intersection of aviation operations and digital transformation — from managing disruptions behind the counter to leading global technology programmes at airline and airport scale. The value here is a perspective built from the inside out, not the outside in. That difference is what protects investment, accelerates delivery, and produces outcomes that actually hold in a live terminal environment.</p>
       <div class="hero-kpis">
         <div class="hkpi"><span class="hkpi-v">25+</span><span class="hkpi-l">Years in Aviation</span></div>
         <div class="hkpi"><span class="hkpi-v">3</span><span class="hkpi-l">IATA Working Groups</span></div>
-        <div class="hkpi"><span class="hkpi-v">4</span><span class="hkpi-l">Transformation Programmes</span></div>
-        <div class="hkpi"><span class="hkpi-v">3</span><span class="hkpi-l">Countries · Airline &amp; Airport</span></div>
+        <div class="hkpi"><span class="hkpi-v">5</span><span class="hkpi-l">Transformation Programmes</span></div>
+        <div class="hkpi"><span class="hkpi-v">Airline + Airport</span><span class="hkpi-l">Both Sides · Global</span></div>
       </div>
       <div class="hero-ctas">
         <a href="#contact" class="btn-primary">✉ &nbsp;Contact Me</a>
@@ -744,51 +744,66 @@ footer{background:var(--dark);padding:22px 52px;display:flex;justify-content:spa
 
 <!-- ═══ WHAT I BRING ═══ -->
 <section class="sec bg" id="journey">
-  <div class="sh"><span class="sh-tag">What I Bring</span><h2 class="sh-title">A Perspective Built From Every Layer</h2><div class="sh-rule"></div></div>
-  <p class="sh-sub">Most aviation professionals have deep expertise in one area — operations, or technology, or strategy. The value here is that all three have been lived, not observed.</p>
-  <div class="wib-statement">"I have stood behind the check-in counter at 2 AM when a system failed. I have written the functional specification for that system. I have owned its global rollout. I have governed the airport it ran in. I now advise on what replaces it with AI. That sequence — lived in full, not assembled from roles — is what makes the perspective different."</div>
+  <div class="sh">
+    <span class="sh-tag">What I Bring</span>
+    <h2 class="sh-title">A Perspective Built From Every Layer</h2>
+    <div class="sh-rule"></div>
+  </div>
+  <p class="sh-sub">Most aviation professionals have deep expertise in one area. The value here is that operations, technology, and strategy have all been lived — not observed.</p>
+
+  <div class="wib-statement">
+    "I have stood behind the check-in counter at 2 AM when a system failed. I have written its specification. I have owned its global rollout. I have governed the airport it ran in. I now advise on what replaces it with AI. That sequence — lived in full — is what makes the perspective different."
+  </div>
+
   <div class="wib-grid">
+
     <div class="wib-card">
       <div class="wib-icon" style="background:#fef3e2;">✈</div>
       <h3>Operational Instinct</h3>
-      <p class="wib-body">Eight years on the airline frontline before ever touching a technology role. Every system recommendation since has been filtered through knowing what it actually feels like when things go wrong at a busy gate.</p>
-      <div class="wib-proof">Technology that does not fit how people work gets quietly abandoned. This is the filter that catches that early.</div>
+      <p class="wib-body">Eight years on the airline frontline before touching any technology role. Check-in, disruptions, load sheets, live departures. Every system recommendation since has been filtered through knowing what it feels like when things go wrong at a busy gate.</p>
+      <div class="wib-proof">Knows where a system breaks — because I was the person it broke for.</div>
     </div>
+
     <div class="wib-card">
       <div class="wib-icon" style="background:#e8f0fb;">⚙</div>
-      <h3>The Translator Between Two Worlds</h3>
-      <p class="wib-body">Spent years as the domain bridge between airline operations and technology product teams. Fluent in both languages. Most programmes fail in the gap between them.</p>
-      <div class="wib-proof">Can sit in a room with a technology team and an operations team simultaneously — and make sense to both.</div>
+      <h3>The Bridge Between Ops and IT</h3>
+      <p class="wib-body">Years spent translating airline operations into technology requirements — and explaining technology constraints back to operations teams. Fluent in both languages. Most programmes fail in the gap between them.</p>
+      <div class="wib-proof">Can make sense to both sides of the table simultaneously.</div>
     </div>
+
     <div class="wib-card">
       <div class="wib-icon" style="background:#eff6ff;">🌐</div>
       <h3>Global Delivery at Scale</h3>
-      <p class="wib-body">Owned the IT estate for a global airline across 150+ airports. Shaped IATA Resolution 753 in a working group — then implemented it. Delivered a zero-downtime airport migration. Not oversight roles — accountable delivery.</p>
-      <div class="wib-proof">Policy to platform, across 150+ airports, with industry recognition. Not as a consultant — as the person accountable.</div>
+      <p class="wib-body">Owned the IT estate for a global airline across 150+ airports. Shaped IATA Resolution 753 in a working group — then implemented it. Delivered a zero-downtime airport migration. Not oversight — accountable delivery throughout.</p>
+      <div class="wib-proof">Policy to platform, 150+ airports. As the person accountable — not observing from a distance.</div>
     </div>
+
     <div class="wib-card">
       <div class="wib-icon" style="background:#f0edf9;">🏛</div>
-      <h3>Airline and Airport — Both Sides</h3>
-      <p class="wib-body">Moved from airline IT to airport transformation deliberately — to understand the ecosystem from both sides. What the airline needs from the airport. What the airport needs from the airline. Very few have operated at depth on both sides.</p>
+      <h3>Airline + Airport — Both Sides</h3>
+      <p class="wib-body">Moved from global airline IT to major airport transformation deliberately — to understand the ecosystem from both sides. What the airline needs from the airport. What the airport needs from the airline. Very few have operated at depth on both.</p>
       <div class="wib-proof">Bilateral fluency that removes the friction responsible for most joint programme delays.</div>
     </div>
+
     <div class="wib-card">
       <div class="wib-icon" style="background:#e8f5ee;">🤖</div>
       <h3>AI Grounded in Operational Reality</h3>
-      <p class="wib-body">AI advisory works best when the adviser has lived the problem being solved. An AI disruption management framework designed by someone who has managed a real disruption at 2 AM is fundamentally different from one designed by someone who has only modelled it.</p>
-      <div class="wib-proof">Solutions designed for adoption in the terminal — not for approval in the boardroom.</div>
+      <p class="wib-body">AI advisory works best when the adviser has lived the problem. A disruption management framework designed by someone who has managed a real disruption at 2 AM is a fundamentally different product from one designed by someone who has only modelled it.</p>
+      <div class="wib-proof">Designed for adoption in the terminal — not for approval in the boardroom.</div>
     </div>
+
     <div class="wib-card wib-card-dark">
       <div class="wib-icon" style="background:rgba(255,255,255,0.1);font-size:20px;">◈</div>
       <h3>What This Means for an Organisation</h3>
       <ul class="wib-list">
         <li>Bad ideas caught before procurement, not after go-live</li>
-        <li>Ops and IT aligned without a translator between them</li>
+        <li>Ops and IT aligned — without a translator between them</li>
         <li>Global standards implemented, not just referenced</li>
         <li>Programmes that work across airline and airport boundaries</li>
         <li>AI that frontline staff actually use</li>
       </ul>
     </div>
+
   </div>
 </section>
 
@@ -816,16 +831,17 @@ footer{background:var(--dark);padding:22px 52px;display:flex;justify-content:spa
         <span class="cr-dot"></span>
         <span>Currently: <strong>AVP – Industry Solutions (Aviation)</strong> at Aionos · AI &amp; Aviation Advisory</span>
       </div>
-      <p class="about-quote">"I solve the problems that sit at the intersection of airline operations, airport infrastructure, and digital transformation — where the complexity is highest, the stakes are real, and generic technology advice does not work."</p>
+      <p class="about-quote">"Most aviation IT programmes fail in the gap between what operations needs and what technology delivers. I have spent 25 years on both sides of that gap — which is why I am unusually well-positioned to close it."</p>
       <p class="about-body">
         <div class="about-outcomes">
-          <div class="ao-label">What I deliver for organisations</div>
+          <div class="ao-label">What this means in practice for an organisation</div>
           <ul class="ao-list">
-            <li>Passenger throughput improvement through self-service redesign, biometric deployment, and flow optimisation</li>
-            <li>Cost reduction through IoT-enabled operational intelligence, process automation, and system consolidation</li>
-            <li>Revenue protection through baggage tracking, disruption management, and customer experience recovery</li>
-            <li>AI adoption that frontline staff actually use — designed by someone who has been frontline staff</li>
-            <li>Transformation programmes that deliver — from global policy standards to ground-level execution</li>
+            <li><strong>Passenger throughput improvement</strong> through self-service redesign, biometric deployment, and flow optimisation — based on having built and run these systems, not just designed them on paper</li>
+            <li><strong>Cost reduction</strong> through IoT-enabled operational intelligence, process automation, and system consolidation — grounded in understanding what the frontline team actually needs from the data</li>
+            <li><strong>Revenue protection</strong> through baggage tracking, disruption management, and customer experience recovery — informed by having managed baggage operations at one of the world's most demanding hubs</li>
+            <li><strong>AI adoption that frontline staff use</strong> — designed by someone who has been frontline staff, understands what works at 2 AM, and knows what gets quietly abandoned after go-live</li>
+            <li><strong>Transformation programmes that deliver</strong> — from IATA global policy standards to ground-level execution across 150+ airports, with industry recognition for the outcome</li>
+            <li><strong>Both airline and airport perspectives in the room simultaneously</strong> — very few practitioners have operated at depth on both sides of that relationship</li>
           </ul>
         </div>
       </p>
@@ -1067,6 +1083,59 @@ footer{background:var(--dark);padding:22px 52px;display:flex;justify-content:spa
       </div>
     </div>
 
+    <!-- CASE STUDY 5: Advisory & AI -->
+    <div class="cs">
+      <div class="cs-head">
+        <span class="cs-num">05</span>
+        <div class="cs-tag">Advisory · AI Strategy · Capability Architecture</div>
+        <h3>Airport &amp; Airline Digital Capability Design — CXO-Level Advisory</h3>
+        <p>Strategic advisory · Airlines &amp; airports · 2023–Present (Netcon &amp; Aionos)</p>
+      </div>
+      <div class="cs-stats">
+        <div class="cs-stat"><span class="v">CXO</span><div class="l">Stakeholder level</div></div>
+        <div class="cs-stat"><span class="v">AI + IoT</span><div class="l">Transformation agenda</div></div>
+        <div class="cs-stat"><span class="v">End-to-End</span><div class="l">Strategy to architecture</div></div>
+      </div>
+      <div class="cs-body">
+        <div class="cs-row" id="cs5r1">
+          <div class="cs-row-head" onclick="toggleCS('cs5r1')">
+            <div class="cs-row-icon ri-challenge">⚠</div>
+            <div class="cs-row-label">Business Challenge</div>
+            <div class="cs-row-preview">Airlines and airports need AI roadmaps grounded in operational reality, not technology trends</div>
+            <span class="cs-chevron">▼</span>
+          </div>
+          <div class="cs-row-detail"><p>Senior leaders at airlines and airports increasingly need to act on AI and digital transformation — but the gap between CXO ambition and operationally viable deployment is wide. Pure technology advisors do not understand the frontline constraints. Domain experts without technology depth cannot design the solution. The result is either AI that does not get adopted, or transformation programmes that optimise processes that should have been eliminated. The question these organisations face is not "what AI can do" but "what should we actually build, in what order, and what will frontline teams use on a Wednesday afternoon when things are going wrong".</p></div>
+        </div>
+        <div class="cs-row" id="cs5r2">
+          <div class="cs-row-head" onclick="toggleCS('cs5r2')">
+            <div class="cs-row-icon ri-role">👤</div>
+            <div class="cs-row-label">My Role</div>
+            <div class="cs-row-preview">Domain-fluent advisor bridging operations realities and AI investment decisions</div>
+            <span class="cs-chevron">▼</span>
+          </div>
+          <div class="cs-row-detail"><p>As GM – Airport Systems &amp; Solutions at Netcon Technologies (2023–2025) and AVP – Industry Solutions at Aionos (2025–present), engaged with airline and airport CXO teams to design AI-led transformation roadmaps grounded in operational knowledge.</p><ul><li>Capability design reviews — mapping the gap between current operational state and digital potential, identifying where AI delivers genuine value versus where it adds complexity without payoff</li><li>Architecture blueprints for AI applications: passenger journey optimisation, AI disruption management, ground operations intelligence, and airside efficiency</li><li>Functional analysis across Flight Operations, Ground Services, and Revenue Management to define where data fragmentation creates the most business risk — and where targeted AI application can reduce it</li><li>Business case design that translates AI deployment outcomes into measurable operational and commercial metrics that boards and COOs recognise</li></ul></div>
+        </div>
+        <div class="cs-row" id="cs5r3">
+          <div class="cs-row-head" onclick="toggleCS('cs5r3')">
+            <div class="cs-row-icon ri-solution">⚙</div>
+            <div class="cs-row-label">What Was Delivered</div>
+            <div class="cs-row-preview">Operationally validated AI roadmaps · Capability architecture · Prioritised investment frameworks</div>
+            <span class="cs-chevron">▼</span>
+          </div>
+          <div class="cs-row-detail"><ul><li><strong>AI Passenger Concierge architecture</strong> — defining the functional requirements for airline-side AI that handles passenger communication, self-service recovery, and proactive disruption notification in a way that integrates with existing DCS and loyalty platforms without requiring a full stack replacement</li><li><strong>AI Disruption Management framework</strong> — leveraging 25 years of having managed and observed disruptions to define what information frontline teams actually need at 2 AM, and what an AI system must provide to be used rather than ignored</li><li><strong>Digital capability assessments</strong> for airport operators — mapping the operational intelligence gap and translating floor-level workflow patterns into technical module requirements and phased AI deployment roadmaps</li><li><strong>IoT-to-AI architecture</strong> — building on the DIAL IoT vehicle tracking implementation to define how sensor data feeds into predictive AI for ground operations scheduling and turnaround optimisation</li></ul></div>
+        </div>
+        <div class="cs-row" id="cs5r4">
+          <div class="cs-row-head" onclick="toggleCS('cs5r4')">
+            <div class="cs-row-icon ri-impact">📈</div>
+            <div class="cs-row-label">Value Delivered</div>
+            <div class="cs-row-preview">AI roadmaps grounded in operational reality · Investment frameworks that boards can act on</div>
+            <span class="cs-chevron">▼</span>
+          </div>
+          <div class="cs-row-detail"><ul><li>CXO stakeholders received AI investment frameworks grounded in operational feasibility — not theoretical technology scenarios that unravel at the first operational edge case</li><li>Capability assessments that identified where data fragmentation was the root cause of operational failure — and where a targeted AI layer could close the gap without replacing the entire stack</li><li>Business cases designed around specific, measurable outcomes: reduced disruption handling time, passenger self-service recovery rates, queue elimination at critical touchpoints, turnaround time improvement</li><li>The value of bringing 25 years of aviation operations experience into an AI advisory role: knowing which problems are worth solving, which solutions will actually be adopted, and which AI investments will sit unused after the first quarterly review</li></ul></div>
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
 
@@ -1257,35 +1326,58 @@ footer{background:var(--dark);padding:22px 52px;display:flex;justify-content:spa
 </section>
 
 <!-- ═══ INSIGHTS ═══ -->
-<section class="sec bg" id="insights">
-  <div class="sh"><span class="sh-tag">Perspectives</span><h2 class="sh-title">Industry Point of View</h2><div class="sh-rule"></div></div>
-  <p class="sh-sub">Views shaped by 25 years at the intersection of aviation operations, technology delivery, and passenger experience.</p>
+<section class="sec" id="insights">
+  <div class="sh">
+    <span class="sh-tag">Perspectives</span>
+    <h2 class="sh-title">Industry Point of View</h2>
+    <div class="sh-rule"></div>
+  </div>
+  <p class="sh-sub">Four perspectives shaped by 25 years at the intersection of aviation operations, technology delivery, and passenger experience.</p>
+
   <div class="pov-grid">
+
     <div class="pov-card">
       <div class="pov-tag">AI in Aviation</div>
-      <h3>Why AI-Driven Disruption Management Is the Most Valuable Use Case in Aviation Right Now</h3>
-      <p>IROPs cost airlines billions annually. The data to fix this already exists. The problem is that the people who have it and the systems that need it are not connected in real time. AI changes that — but only if it is designed by someone who has stood behind the counter at 2 AM and understands what information an agent actually needs, in what format, at what moment.</p>
-      <div class="pov-footer"><span class="pov-topic">AI · IROPs · Disruption</span><a href="https://linkedin.com/in/vishalvsrivastava" target="_blank" class="pov-link">Follow on LinkedIn →</a></div>
+      <h3>AI-Driven Disruption Management Is the Most Valuable Use Case in Aviation Right Now</h3>
+      <p>IROPs cost airlines billions annually. The data to fix this already exists — the problem is that the people who have it and the systems that need it are not connected in real time. AI changes that, but only if it is designed by someone who has stood behind the counter at 2 AM and understands what an agent actually needs: not a dashboard, not an alert — the right action, pre-suggested, ready to execute.</p>
+      <div class="pov-footer">
+        <span class="pov-topic">AI · IROPs · Disruption</span>
+        <a href="https://linkedin.com/in/vishalvsrivastava" target="_blank" class="pov-link">Follow on LinkedIn →</a>
+      </div>
     </div>
+
     <div class="pov-card">
       <div class="pov-tag">Customer Experience · AI</div>
       <h3>The Passenger Concierge Is the Most Important CX Innovation Airlines Are Not Building Yet</h3>
-      <p>Every premium hotel has a concierge. Every private bank has a relationship manager. Airlines have a FAQ page. The mobile app is already in every passenger's hand — it is the most direct channel that exists. An AI-powered Passenger Concierge that knows your booking, monitors your journey in real time, detects friction before you encounter it, and acts proactively — is not a future concept. The data feeds exist. The AI capability exists. What is missing is the operational understanding to design it around how passengers actually travel.</p>
-      <div class="pov-footer"><span class="pov-topic">AI · Passenger Concierge · Mobile CX</span><a href="https://linkedin.com/in/vishalvsrivastava" target="_blank" class="pov-link">Follow on LinkedIn →</a></div>
+      <p>Every premium hotel has a concierge. Every private bank has a relationship manager. Airlines have a FAQ page. The mobile app is already in every passenger's hand. The data feeds exist. The AI capability exists. What is missing is the operational understanding to design it around how passengers actually travel — not how airlines wish they did.</p>
+      <div class="pov-footer">
+        <span class="pov-topic">AI · Passenger Concierge · Mobile CX</span>
+        <a href="https://linkedin.com/in/vishalvsrivastava" target="_blank" class="pov-link">Follow on LinkedIn →</a>
+      </div>
     </div>
+
     <div class="pov-card">
       <div class="pov-tag">Passenger Processing</div>
       <h3>The Future of Passenger Processing Is Not About Technology — It Is About Flow</h3>
-      <p>DigiYatra proved biometrics work at scale. But 50,000 journeys in month one did not happen because the technology was impressive — it happened because the passenger flow around it was designed correctly. Self-service adoption fails almost always at the process level, not the technology level. The kiosk that works is the one that fits how passengers actually move through a terminal.</p>
-      <div class="pov-footer"><span class="pov-topic">Biometrics · Self-Service · Flow</span><a href="https://linkedin.com/in/vishalvsrivastava" target="_blank" class="pov-link">Follow on LinkedIn →</a></div>
+      <p>DigiYatra reached 50,000 journeys in month one — not because the technology was impressive, but because the passenger flow around it was designed correctly. Self-service adoption fails almost always at the process level, not the technology level. The kiosk that works is the one that fits how passengers actually move through a terminal.</p>
+      <div class="pov-footer">
+        <span class="pov-topic">Biometrics · Self-Service · Flow</span>
+        <a href="https://linkedin.com/in/vishalvsrivastava" target="_blank" class="pov-link">Follow on LinkedIn →</a>
+      </div>
     </div>
+
     <div class="pov-card">
       <div class="pov-tag">Airport Operations</div>
       <h3>The Airport Digital Twin Is Coming — But Most Airports Are Not Ready for the Data Problem</h3>
-      <p>A digital twin of airport operations sounds straightforward until you try to build one. The data exists — in AODB, FIDS, BHS, IoT sensors, airline DCS feeds — but it lives in disconnected systems with different owners and different incentives to share. The technology is not the hard part. The governance and integration architecture is. I have seen what happens when this is not solved first.</p>
-      <div class="pov-footer"><span class="pov-topic">Digital Twin · IoT · Data Architecture</span><a href="https://linkedin.com/in/vishalvsrivastava" target="_blank" class="pov-link">Follow on LinkedIn →</a></div>
+      <p>A digital twin of airport operations sounds straightforward until you try to build one. The data exists — in AODB, FIDS, BHS, IoT sensors, airline DCS feeds — but it lives in disconnected systems with different owners and different incentives to share. The technology is not the hard part. The governance and integration architecture is.</p>
+      <div class="pov-footer">
+        <span class="pov-topic">Digital Twin · IoT · Data Architecture</span>
+        <a href="https://linkedin.com/in/vishalvsrivastava" target="_blank" class="pov-link">Follow on LinkedIn →</a>
+      </div>
     </div>
+
   </div>
+
   <div class="li-banner">
     <div class="li-icon">🔗</div>
     <div class="li-text">
@@ -1294,6 +1386,7 @@ footer{background:var(--dark);padding:22px 52px;display:flex;justify-content:spa
       <a href="https://linkedin.com/in/vishalvsrivastava" target="_blank" class="li-btn">View LinkedIn Profile →</a>
     </div>
   </div>
+
 </section>
 
 <!-- ═══ KNOWLEDGE MAP ═══ -->
@@ -1350,35 +1443,25 @@ footer{background:var(--dark);padding:22px 52px;display:flex;justify-content:spa
 
 <!-- ═══ CREDENTIALS ═══ -->
 <section class="sec" id="credentials">
-  <div class="sh"><span class="sh-tag">Credentials</span><h2 class="sh-title">Education &amp; Certifications</h2><div class="sh-rule"></div></div>
+  <div class="sh">
+    <span class="sh-tag">Credentials</span>
+    <h2 class="sh-title">Education &amp; Certifications</h2>
+    <div class="sh-rule"></div>
+  </div>
 
   <div class="cred-cols">
 
     <div class="cred-col">
       <div class="cg-label">ACI World · 5 Certifications · 2021–2022</div>
       <div class="cert-stack-wrap" onclick="openCert(0)">
-  <div class="cert-stack-card" style="z-index:5;top:0px;left:0px;">
-    <div class="cert-stack-label">ACI World Diploma · Airport Operations Diploma</div>
-    <div class="cert-stack-date">09 Jun 2022</div>
-  </div>
-  <div class="cert-stack-card" style="z-index:4;top:5px;left:3px;">
-    <div class="cert-stack-label">ACI · Airport Digital Transformation</div>
-    <div class="cert-stack-date">21 Jul 2021</div>
-  </div>
-  <div class="cert-stack-card" style="z-index:3;top:10px;left:6px;">
-    <div class="cert-stack-label">ACI · Airside Operations</div>
-    <div class="cert-stack-date">11 Mar 2022</div>
-  </div>
-  <div class="cert-stack-card" style="z-index:2;top:15px;left:9px;">
-    <div class="cert-stack-label">ACI · Terminal & Landside Operations</div>
-    <div class="cert-stack-date">20 Apr 2022</div>
-  </div>
-  <div class="cert-stack-card" style="z-index:1;top:20px;left:12px;">
-    <div class="cert-stack-label">ACI · Airport Business Operations</div>
-    <div class="cert-stack-date">09 Jun 2022</div>
-  </div>
-  <div class="cert-stack-hint">Click to view all 5 certifications ↗</div>
-</div>
+        <div class="cert-stack-card" style="z-index:5;top:0px;left:0px;"><div class="cert-stack-label">★ ACI Diploma · Airport Operations Diploma</div><div class="cert-stack-date">09 Jun 2022</div></div>
+<div class="cert-stack-card" style="z-index:4;top:6px;left:4px;"><div class="cert-stack-label">ACI · Airport Digital Transformation</div><div class="cert-stack-date">21 Jul 2021</div></div>
+<div class="cert-stack-card" style="z-index:3;top:12px;left:8px;"><div class="cert-stack-label">ACI · Airside Operations</div><div class="cert-stack-date">11 Mar 2022</div></div>
+<div class="cert-stack-card" style="z-index:2;top:18px;left:12px;"><div class="cert-stack-label">ACI · Terminal & Landside Operations</div><div class="cert-stack-date">20 Apr 2022</div></div>
+<div class="cert-stack-card" style="z-index:1;top:24px;left:16px;"><div class="cert-stack-label">ACI · Airport Business Operations</div><div class="cert-stack-date">09 Jun 2022</div></div>
+
+        <div class="cert-stack-hint">Click to view certificates ↗</div>
+      </div>
     </div>
 
     <div class="cred-col">
@@ -1389,13 +1472,12 @@ footer{background:var(--dark);padding:22px 52px;display:flex;justify-content:spa
 
     <div class="cred-col">
       <div class="cg-label">IATA Working Groups · 2016</div>
-      <div class="cr"><span class="cr-yr">WG</span>Baggage Working Group — shaped Resolution 753, then delivered it</div>
+      <div class="cr"><span class="cr-yr">WG</span>Baggage Working Group — shaped Resolution 753, then delivered it across 150+ airports</div>
       <div class="cr"><span class="cr-yr">WG</span>Passenger Experience Common User Group</div>
     </div>
 
   </div>
 
-  <!-- LIGHTBOX -->
   <div class="cert-lb" id="certLightbox" onclick="closeCert(event)">
     <div class="cert-lb-box">
       <button class="cert-lb-close" onclick="closeLightbox()">✕</button>
@@ -1420,45 +1502,32 @@ const certSlides = [
   { src: "data:image/jpeg;base64,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AG/jDNYiJiNzbda6DmzPKo610HNmeVTLBw807WjLDE610HNmeVR1roObM8qmWBmnaZYYnWug5szyqOtdBzZnlUywM07TLDE610HNmeVR1roObM8qmWBmnaZYYnWug5szyqOtdBzZnlUywM07TLDE610HNmeVR1roObM8qmWBmnaZYYnWug5szyqOtdBzZnlUywM07TLDE610HNmeVR1roObM8qmWBmnaZYYnWug5szyqOtdBzZnlUywM07TLDE610HNmeVR1roObM8qmWBmnaZYYnWug5szyqOtdBzZnlUywM07TLDE610HNmeVR1roObM8qmWBmnaZYYnWug5szyqOtdBzZnlUywM07TLDE610HNmeVR1roObM8qmWBmnaZYYnWug5szyqOtdBzZnlUywM07TLDE610HNmeVR1roObM8qmWBmnaZYYnWug5szyqOtdBzZnlUywM07TLDE610HNmeVR1roObM8qmWBmnaZYYnWug5szyqOtdBzZnlUywM07TLDE610HNmeVR1roObM8qmWBmnaZYYnWug5szyqOtdBzZnlUywM07TLDE610HNmeVR1roObM8qmWBmnaZYYnWug5szyqOtdBzZnlUywM07TLDE610HNmeVR1roObM8qmWBmnaZYYnWug5szyqOtdBzZnlUywM07TLDE610HNmeVR1roObM8qmWBmnaZYYnWug5szyqOtdBzZnlUywM07TLDE610HNmeVR1roObM8qmWBmnaZYYnWug5szyqOtdBzZnlUywM07TLDE610HNmeVR1roObM8qmWBmnaZYYnWug5szyqOtdBzZnlUywM07TLDE610HNmeVR1roObM8qmWBmnaZYYnWug5szyqOtdBzZnlUywM07TLDE610HNmeVR1roObM8qmWBmnaZYYnWug5szyqOtdBzZnlUywM07TLDE610HNmeVR1roObM8qmWBmnaZYYnWug5szyqOtdBzZnlUywM07TLDE610HNmeVR1roObM8qmWBmnaZYYnWug5szyqOtdBzZnlUywM07TLDE610HNmeVR1roObM8qmWBmnaZYYnWug5szyqOtdBzZnlUywM07TLDE610HNmeVR1roObM8qmWBmnaZYYnWug5szyqOtdBzZnlUywM07TLDE610HNmeVR1roObM8qmWBmnaZYYnWug5szyqOtdBzZnlUywM07TLDE610HNmeVR1roObM8qmWBmnaZYYnWug5szyqOtdBzZnlUywM07TLDE610HNmeVR1roObM8qmWBmnaZYYnWug5szyqOtdBzZnlUywM07TLDE610HNmeVR1roObM8qmWBmnaZYYfWug0/7szyqQZa2NjzJ4Q8bG7LW01EiIng/9luJ/XkICt3xncIn6NRf2tTbwOZmLmOyPqpeK4iMPzolq+A53plH4yqvtNLIlbuA53plH4yqvtNLInrjf3272pRZ9nTuAAc5aAAAAAAAAo9kd3juen0i6/hULgYC+KrDPiml+5YU/yO7x3PT6RdfwqFwMBfFVhnxTS/csO7xz69fa/jDPY1RudCADhNAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC8hAVu+M7hE/RqL+1qT6vIQFbvjO4RP0ai/tam7gWq5uj66VdfR+dEtXwHO9Mo/GVV9ppZErdwHO9Mo/GVV9ppZE98b++3e1KLPs6dwADnLQAAAAAAAFHsju8dz0+kXX8KhcDAXxVYZ8U0v3LCn+R3eO56fSLr+FQuBgL4qsM+KaX7lh3eOfXr7X8YZ7GqNzoQAcJoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAXkICt3xncIn6NRf2tSfV5CArd8Z3CJ+jUX9rU3cC1XN0fXSrr6Pzolq+A53plH4yqvtNLIlbuA53plH4yqvtNLInvjf3272pRZ9nTuAAc5aAAAAAAAAo9kd3juen0i6/hULgYC+KrDPiml+5YU/wAju8dz0+kXX8KhcDAXxVYZ8U0v3LDu8c+vX2v4wz2NUbnQgA4TQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAvIQFbvjO4RP0ai/tak+ryEBW74zuET9Gov7Wpu4Fqubo+ulXX0fnRLV8BzvTKPxlVfaaWRK3cBzvTKPxlVfaaWRPfG/vt3tSiz7OncAA5y0AAAAAAABR7I7vHc9PpF1/CoXAwF8VWGfFNL9ywp/kd3juen0i6/hULgYC+KrDPiml+5Yd3jn16+1/GGexqjc6EAHCaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAF5CArd8Z3CJ+jUX9rUn1eQgK3fGdwifo1F/a1N3AtVzdH10q6+j86JavgOd6ZR+Mqr7TSyJW7gOd6ZR+Mqr7TSyJ74399u9qUWfZ07gAHOWgAAAAAAAKPZHd47np9Iuv4VC4GAviqwz4ppfuWFP8ju8dz0+kXX8KhcDAXxVYZ8U0v3LDu8c+vX2v4wz2NUbnQgA4TQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAvIQFbvjO4RP0ai/tak+ryEBW74zuET9Gov7Wpu4Fqubo+ulXX0fnRLV8BzvTKPxlVfaaWRK3cBzvTKPxlVfaaWRPfG/vt3tSiz7OncAA5y0AAAAAAABR7I7vHc9PpF1/CoXAwF8VWGfFNL9ywp/kd3juen0i6/hULgYC+KrDPiml+5Yd3jn16+1/GGexqjc6EAHCaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHNU+YmA6vFHY5S4xsc92R3FrRRVsb5Uf/AMqtRf0v+nl/gdKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABqcRYnw9hGxSXnE96orTQRqjXVFZKkbdpeRqa8qr4ETeYWE8e4Nx1STVOEcSW67shdsypSyo58S+Dab+k3XwapvA6MA0FfjfCNrmu8VxxHbqV9niimuLZZkb1IyX/huk/wCVHeD5QN+D8RUVqKi6ovhP0AAAAAAAAAvIQFbvjO4RP0ai/tak+ryEBW74zuET9Gov7Wpu4Fqubo+ulXX0fnRLV8BzvTKPxlVfaaWRK3cBzvTKPxlVfaaWRPfG/vt3tSiz7OncAA5y0AAAAAAABR7I7vHc9PpF1/CoXAwF8VWGfFNL9ywp/kd3juen0i6/hULgYC+KrDPiml+5Yd3jn16+1/GGexqjc6EAHCaAAAAAAAAAAAAAAAAAAAAAAAAAAAAaXFmLLFgjCNXiXElb1Jb6XZR70Y6RznOcjGMYxqK573Oc1rWoiqqqiHLU2dGCJcK3q9Vktztstlmhpq+111BLFXQyzK1II+p9Fc5ZVe1GbOqOVdEXcugSGDl8H49suNFuEFBBcqG4W2RkVbbbpSPpamnV7dpiuY7/AEubva5FVF0XfqionO1eeWCIbLa7jQsvd365sqp6WmtVsmqp309PJxctSsbU1SFHbOj1/S2m7OuoElA4S5ZvYIobBh66UdfU3lcSRLPZaO0UslVUV8aMR7nsjamqNa1yK5ztlG66KqLuNve8bWjDmA4cVXmG4UtPMtPGylWlc6qWWeRkccPFN1csivka3ZTkXX5AOkBwk2bOGqXHMGGq6iv9F1TX9a6e51VqmhoZ6rfpCydzURVVWuRF/RcqaI5VPGfOfA9Pjx2F5ai4Nc24ss77n1FJ1AyvciK2kWo02ElXaamnJtORuu0ugEgg4SpzZwzRY5gw3XUV/pEqK9LXDc6m1TxUMtWuukLZ3NRFVVRWo79FV3I5VPm4Zu4VtOOKfDd0pr7RJUV7LVDc6i1zx0MlW/8AQgbOrdlXOXci/oqu5Hagd6AAAAAAAAAAAAAAADjaG/3KXPq+4alqUdbqax0FdDBsIiskknqmPdtaarqkUe5eTT+KmvwriTEGNczLrc7ZVxwYItPGWyDSJHOu1Y1ycdO168kMSosTdn9N/GKq6NbrHuO3X678K+uwHh51VSS3/CdEytusK7PW+ijrKnj3ovLxr0ekUenI56u/0E7Waz2vD2H6Kx2WhhobdRQtp6amhbssijamjWonyIiBLOAAQEVX512zYxDccHWmuntmDKCRaW9XSklWOouUyfp0VO9v/Djb+jNKi7WqrG3RUc5NxmlfrzR2e3YTwpUsp8SYlqlt1DUu39RsRiyT1WnhWOJrlanhesaeE6vD9itmGcMUNgs9OkFDRQthiZrquieFy+Fyrqqqu9VVVXeoHzYcN2DC9hgsuHLNQ2q3U6IkVLRwNijb/HRE5f48qm0AAAAAAAAAAAAAAAAAAAAAAAAOSzAzLwbljYI7tjC7to45n8XTwRsdLPUOTeqRxNRXO2U3uVE0am9VRD9xlmFZMFVFtoq2mutxuVyWTqO22mifV1MzY0R0j0Y3kY1HN1cqomrmpyqiAdYCP6vOTBkWGbBeba+6XvsgZJLbaK00EtRVTsiRONcsSJtMSNVRH7Wmy5UbyqiH1Jm7hmfCdoxFh+gxBiWiuzJJKZbHapqlUbG7Zfxm5EjVrtWq16o7aRU01RQO+BH1RnNgpuFcP3y2Pud5TECSOtlFa6CWeqnSL/jLxSIjmcWu5+1psronKqIbugzAwlccs34/guzGWCOCWomqp43RLC2JXJIj2ORHNexzHNVqpqjkVNNQOmBHlZnNhGmwThjE1NT3y5QYm/8Asult1slqKmbSJ0q6wtTaboxjlXXk0Mi65r4es1isdbW27EDa++Okbb7G22SrcZ1jRXSf9n02mo1qbTldoiIqb96ah3YODXNvC9Rg23YjslJfb7DcJZIIqa1WuaeoZJEqtlZLHspxLmORWuSTZ3ppvU6PCmKbNjTCNJiSwVD56Cq20askTonsex6sex7HIjmva9rmuaqaorVQDcgAAAAAAAAAAAAIfvFFSYi4Ztpt18hZUUlkww+6W6nmRHM6plqeKfNsruVzGNaiL4Nv+Jj5k22gsPCFyxxfZ2x016uNylsdY2JEatZRvp5JHbaJ+lxbo2ORV5Nf5HXZgZddmNba73ZsQ1eGcT2lz+obxRxtlc2N+iSQyRu7mSN2jVVq+FEVFQ1mEsqbhQY9ZjrHuM6rGOIqeB1NQTSUjKSnoI3/AKfEwsVUR7tERXqqrpu3ARB2ys5EyPu+brsZWtKWzXqaiSyJaWK2sgZWpAvGS67TX6O3bOiaNTXVVU9sbXyrsOYmfV8oIqSSogstjkjZWQNqIlVUcndMcmjuXwklOyLpXcHy85W9ks/FXO4S163DqZu1GslWlTsoza0XRU2ddf4nriXJGmxHXY9qX4jnp1xdQ0NE9raZrupUpuRyd13e18i6aAayuuWZ2K888T4Nw1jajw1bLRbaCrZMlrjq5nSztl1b3a6bH+Xqu5V5ETTecvJndiC4ZcZbR1l8p8OXDElNVVFyvFPbnViwsplRjkhgRHd1I9W73IqNTa3LuJns2CYrRmliHGbbi+Z95o6OkdSrGiJClOkiI5Ha79rjOTTdocdHklLbcvcJ2nDuMam13/CzploL4lIyTbZMrllilhVdHRuRW6pqi6saqKBnZOY1u+KqbEFtu1dJd0tFc2Glva299ClwgfGj2uWNzURHtVXsdsoiLsoqImpJxymBMKXTC9rrXX7Fldia7XCpWqqa6obxUaLso1scMKKrYo2o3c1OVVVVVVU6sAAAAAALyEBW74zuET9Gov7WpPq8hAVu+M7hE/RqL+1qbuBarm6PrpV19H50S1fAc70yj8ZVX2mlkSt3Ac70yj8ZVX2mlkT3xv77d7Uos+zp3AAOctAAAAAAAAUeyO7x3PT6RdfwqFwMBfFVhnxTS/csKf5Hd47np9Iuv4VC4GAviqwz4ppfuWHd459evtfxhnsao3OhABwmgAAAAAAAAAAAAAAAAAAAAAAAAB4VtZT2+hkrKp6shjTVzkarlTfpyIiqpp+zTD3O5v6Wb3D1FFU6oRi4ThDW241mWNquVDRVNbDZcR2q8V1PSxulkdS09Wx8ytY1FV+y1FfsoiqqNXRCPpaSyZh5h5mY8gvk9kwrHTWFaDE3Uy8UtfQTy1CTMbImkrI3SRMdu2V1c3XVFVJ77NMPc7m/pZvcHZnh7nc39LN7hOjr2GMK5Q3rFrIsxMZW2+VV6rMSU9rwjh25stjqGGqrXOna6WCLe5IYeqdrjXKqKscui6Ih2NezDuTGdmH7jdEmt+EoMFpYKGrbTyTNZNT1DZOKdxbXKj5I1RWoqd2sbkTVdxLnZnh7nc39LN7g7M8Pc7m/pZvcGjr2GMKrYZsUuFZMDXjMG5YnwXZarC1bBDUULXwvpppbi6qbTTSMY50DlhfEqN7nadErFVdnZWQsG1eLcfXLKyyYygrHz2eilxRdpKynWF8z0e+ntvGtRERsrmufO5miaOiTVE3ITP2Z4e53N/Sze4OzTD3O5v6Wb3Bo69hjCE7pmdg/MDhA0GHrpiKjtuH8L3dnEUc8craq73aN2xHomz3NNE525ddZJGoqdw3V3F3Kmq48sb1kqlHWuxxWZh9caeBtNIvGUr7syuSt4zTZ4pIEXV+u5zVZy7i0HZph7nc39LN7g7M8Pc7m/pZvcGjr2GMIUveaGD8eZ/0OFrpiCltdgwvd2OSGobI2pvF1jdsxMY3Z7mmie7XbVf8AMka1E7lqq75xbmJgfHWflDhG/Yjgtdhwld4pnU87JGT3a7RPTimNTZ/7vC5dVdu4yRGoncsVXTb2aYe53N/Sze4fvZph7nc39LN7g0dewxhv05AaDs0w9zub+lm9w2duudHdaV1RQyOfG12wqujczf8AyciL4SJoqjnmDGGYADykAAAAxa+4Utso1qqxz2x7SN1ZG6RdV/g1FUmIx5oGUDQ9mNh5xVf0U/uDsxsPOKr+in9w9aOvZKMYb4LybjQ9mNh5xVf0U/uDsxsPOKr+in9waOvZJjCE8G3WGycN7Ml+Lbn1FV1dtpXUvV8iRQrRxvckXEK7RFTRz1foq6O2tdDp8b57RWfFFhtOAbG7Hq1cjnV6WF61TqaJNGpo6NHRo9XLrpI5iaNXebDFmG8rsb47w9irE1C+41NijqI6anqrbJLA9Jkajlex0aoqt2EVq+BVU66kxJhWgpGUtCx9NAxNGxQ2+ZjW/wAkSPQaOvZKcYaS35i367QQvoMrcWtWSna93VrIaNIp/wDVC7jZGu7n9o1qtX/Sqm/tl6xFV35aOvwdVUFJsK5K51bBIzVP9Ow121v+XTQ++zGwft6n+in9wdmNh5xVf0U/uDR17JRjDhsybpS4RzkwRjfELuIw1T01wtlVcHoqw2+eo4hYZZV/0MdxL49tdyK9uqpqSfS11FXUDK6iq4Kimkbtsnhka9jk+VHIuioaeTFuHZYnRSyVD2PRWua6hnVHIvKipsb0IyrMpuDnXXR9fPl7a0le7be2K21EUbl11XWNjUYvkGjr2SYwyMRZ2zy5pUmDcubQmKpKdOrLrPRqj42wRuRJ4YZNUjfUNR8S7G1/rRF3qZ82Lc6LVNJeLhl3arlY3q2dKS21rkudJAqqjmOiVHMnmRFa9UY5qLo5qaqjVd1ltvmDbNa4LbaKZKCjp2cXDTUttlijjb8jWtjRET+RmdmNg/b1P9FP7g0deyU4w0j83cEQppUz3qneib45rFXtcn804k8Zs38NOh27TaMXXl68kdBh2sVf93Pja1P91Q6DswsHOKr+jn9w/ezCwc4qv6Kf3Bo69koxhx6ZnY1rV1tGRuNJWeB9fU2+i1//AGvqFVPIZsGOMfq3aqsmL/Fp4I7rbpF+/Q6PswsH7ep/op/cHZjYf29T/RT+4NHXskxhzqZoT08uxd8tceW5qfpSpbWVjE/ppJFXyHSYbxhhvFsE8uH7rFVupnIyohVro5oHLyJJE9EexV8G0ianz2YWD9vU/wBFP7h5pivDbah07XzJK5qNdJ1DNtKia6Iq7Guiar5VGjr2SYw6IGh7MbDziq/op/cHZjYecVX9FP7g0deyTGG+Bq7fiC13OrWmo5ZnSI1XaPp5Y00T+LmonhNoeZiY5pSAAgAAAB8SyMhgfK9VRrGq5dEVdyfwTlNJ2Y2DnFV/RT+4eopqq1QYuN4Q9E2p4NmMJI6RJqplslZC5se3Im0rUcjdE13oiaonLoYGPLrQ4L4RuF8cYmkkpsPOsFxtC16wvkipqp89LMxHq1F2NtkMiIq7lVmnKqIsg9mNh5xVf0U/uDsxsPOKr+in9wnR17JRjCvtjttLh7LTDOYlyxbNga6rX3t1vZW2t1Ws9BX1zqlIHU256SK2OGRqJo5F1RUXVUPbBD6TBPB1tmHcxcd4hwHeLzX3G9slijbHVpHNVSyNY9VhkjZIrZWOdGiI5HLoiblJ87MbBp/3iq/op/cHZjYOcVX9FP7g0deyTGEA2KjpbHkfl/jC54jZl/dbS2vt9BJPaJJ23CkmmVUdJSOXjEmmZDDPudtbbnaou0rTAw5hXNWXCVifVYPuF+w/VXe5YmrbbcK6C2VNVPLWulpG1cTm6NY1mk7om6JxisRyaMVFsb2Y2DTTqiq/op/cHZjYP29T/RT+4NHXskxhXLBvY1PwacsqzM+5XzAdbbYZEtNbQV72SSo6FGve57I1RiuR6psP0duXTXebSn6qrMucLZm4vx/V4dvFkuN0oLHfLva+Nfc7bNK5sXVFIiMVZJIYInoqbDtWoundK1Z57MbBziq/op/cHZjYNP8AvFV/RT+4NHXskxhXLDmOLtk7kTPU3hHw4mxvia6XG0dkED6aKCKWXaSqrWxtXiWozZkWJE2ldI1iIiqqpN+TsOF6XKG20eEr/wBfqKJ8yzXRUVrqupfK6Solciomiulke7RNya6JuQ33ZjYP29V/RT+4OzGw84qv6Kf3Bo69kmMN8DQ9mNh5xVf0U/uGfbbzb7ssiUMkr1j02tuCSPl5P0mpryeAiaKo55gxhngA8pAAAAAAAARVcXv+GhYY9t2wuEa5VbqumvVcG/Q3GaWYbsCWi2U9vhoJ73eavqK3x3GpSmpmuRqvfLNIv6MbGtVV03qqtRN6mmxzhXMVc6LTjzAcOG6laazz2uaC81E0Kf5kzJNpvFsXX/h6b/lNVijAOYmO7Ba7tii1YJ7JMP3Jay30KPlqaCthdFsSwz8YzVqu11RyNXZVrV+UDIw9nHeqrD+LKOvsVvvmKcPRQ1DaPC1X1VT3GObVInROdvZo5rkejv0Uaq70VDEwtnLiOXHF1wdiuDCVTdILLLeaeXDVxdVRR8Uuj4J0cmrH6uaqKm5U13Ia+5ZRY3xPlDiy1z0WD8KXC8LTJSWmy06MgjihkR7456hjGPk43RUXRNGppoi6qedjypx1Hji139cO4Lw1bGWKusrrJaJHqlIkrWubLxiRtSVznsRFTRNlu/Vy6gY1Pn3mGmQqZr1+BbTDbKrrfHbqNla9aipfLOkUzlTTRjF1/wAvVdV5XaIp0dJmFjuPFN5wXmVhWyUjqqwVV3t7rTXSStdHH3EkEyqiKj022903dy6GLV5PYmn4I2Gsr2VlsS8Wx1uWaVZH8Q7qeoZI/ZXZ1XVGrpu5fkOrxZgK8XzNinxNST0bKSPDdwtCskc5H8dO+NWLoiabKbC6rrrybgI3wlmhienwXlnhDLzBFrdPfsLrX00VbcJVgoOLdGn+ZI7V72I1y/K5XK3waqb6izyxBLlrUvqMJUz8cRYjdhJlqhqtKWWuRNrbSVU1SFGavVdNU0VD2y+yjxLhW/Zb1txq7dJHhrC01krEhkcqvme6JUdHq1NWdwu9dF5NxzWLsCVGCsH4kxJfMR09mnfjzsmtFzipZKyGjV7WxM6rYiIrY1Tba9UXRqORdQO7wVj/AB9V5zVOXWO8OWWhqqey9dkrrVUySw1CLOkabCPRFaib0VF36pu3KSqV5yqud5xbwprximqxDY8RU0GGYqGSsw9G/qClldUq9sDJHKqyPVqK9y67tpE0QsMAAABeQgK3fGdwifo1F/a1J9XkICt3xncIn6NRf2tTdwLVc3R9dKuvo/OiWr4DnemUfjKq+00siVu4DnemUfjKq+00sie+N/fbvalFn2dO4ABzloAAAAAAACj2R3eO56fSLr+FQuBgL4qsM+KaX7lhT/I7vHc9PpF1/CoXAwF8VWGfFNL9yw7vHPr19r+MM9jVG50IAOE0AAAAAAAAAAAAAAAAAAAAAAAAAAAAHE4ruOJI8xcOWKzXenoKa4wVj5nSUaTv2omxq3ZVXIiJ3a6pp4E3oe7dGecMfyETODtgcBacxYqFb9bMZywQV9hqUhqKmigkdFPE6FkzZ0Ym06NEY/u0VVRqtXulRUNs/MPCkTrmk1fLD1trFoJ3S00jGumRiPVjFVuki7K69zruRV5N57mxcicMEZodSDSy4ssEVltt0S4Nmp7mjXUPEMdI+q2mLInFsaiud3CK7cm5EVV5Dn4MWNxJmLS2qxXmVlvZbae7tnp6XjIq1kskjdh0jmqjW7Me7RUdqv8ABUIps1TEzhzQnNDugcLZ8Xy01+xLBiK4xvhp72lst0UFI7jHItLHUKio1XK9yI96qqImjWa/Kbmixvhi4zwRUVy47qiplpIHshkVk0sbZFkax2zo7Z4mVFVF5WKnKKrNdPR+ayKodCDmafMHB9XVWynp75A+S5xxS0rdlyK9sqKseqKnc7SNdoi6Kuh0x4qoqp9aMCJidQADykAAAAAAAAAAAAAAAABweaGMZcDW6xXmSvZR219zbBcXuplnXiOJlkdsom9F1jRNd+iKuvypkx4upsPWZt0xniCgibcHvqaOGBqKkNOjUdptNVeN2WqjnPTdvTTwa3RYrmmKo6dTzmjHB2YOHu+ZVhjwtcbhaLrTcbSOmidJWU1QkMT4XsZKkmwxXJsrI1OTfqmmqaqbiHGuHZ8TdYY6yZazqqSi0WmlbHx7I0ldFxit2drYXa013oi6chE2LkRjln/xOaHQA4599uV9zGueFrRWNt8Nnp4Jq2p4pJJZJJ0erGMR3co1Gs2nOVF1VyImmiqZVHiSK0SUNgxNdYai8yq6NZqWkkZFK7Zkkam7VGPdHG52ztb1aungE2ao368OrWYunBxtLmngmtsUN5prrK6hlgWrbM6kmYiU6bOs6o5iKkXdJ3a9zy7+5XTY02NsN1eJOsUFbK6s6pkotFppWsWaONJXRpIrdlXbC7SJrvRF010E2bka6Z7jNG10IAKkgAAAAAAAAAAAAAAczjbE82GbTQJRQRy3C6XCC10aTa8U2WVV7t+ioqta1rnKiaKumiKmuqeqKJrmKYRM4c7pgco6qu+GKl9xxJiSjqbMtOxiq+mSGVtSr0aiM2V0c121ojV1ciom9dd3jPmhgyCimq0uNTPDDb0ucj6einla2BdvRyuaxUTVY3poq66tU96GqfVjHcZo6XYgjq/5idRLVw003LW2yjjbFRzrU06VTtFdJG5mm1so5WoiLoum0mu42GGcZWh+F6FzsRVeIJZnz7NSy3vZKrGVDolWSJjO4Rjk4tXKiIqsVdE36ep4PXFObD8wxRmjHB2oOSfmThJs7oG1tTJM2rgolijo5nP25mK+JURG6qxzWuVHp3O5d5s7ZivD95vdXaLZcoqirpUVZWM13Ij1YqovIujmq1dPCh4m1XEYzTKc0N0CIHY+xZR2fEtmu1RQ0t4i6tqLBcm0+1DWwQSOa5j41cmk0ez3TUXe1Ue3/Uje+jxhYIqhlvmubpKptTJQOXqd6bU8UPHSN3N0ReLRXJ4F8Gp7r4PXT17kRVEuhBx9Nmhguq6nWK5ztbUJSujfLRTxtVlSuzA9XOYiI17u5Ry7trdymtwxmLbW0FVTYpuywVsVXc9maopnQRyQ01VIzRj9lGOVjGs1RFVfDpykcnuYTOWTNCQgctS5h4UrbjR2+krp56qrfJHHFDSSyK1Y3sY/bVrVRiNWRmquVE7pF1OpK6qKqfWjBMTE6gAHlIAAAAAAACJcf1+JMW5v23KjDmIqzDdKlsde7xdberUq1h43iooIXORUYrnbSudpqiN0TlM3COHMb4BxhWUVfi+qxJgmSjdUtrL9Uo+vt87V3s20anGQubq7Vd7VT5FMTHdrxNhnOW05qYaw/VYhpktkllvNsoXMSqWFZElimha9UR6sftIrdUVUdu5DXpT5h5p4ku1VUUV4wbhBbFVWqC23TYbUV9VO3Z6okiYrthkbdzUV2qqqroBuMP522e+3SzbeGMR2yy36daaz3yvp2R01bJsuc1qIj1ezbRrlYr2ojtN3gNbdOEPY7c69VMeDMW1lpsFfLQXi7QUsfU9G6N6Nc7VZEV6Jqjl2UVUaqKunIcBg/AFVO/CGGbzlbi1t0tFRTSXGvumIKh9qp1p0TZqKbSZUkc5WpsRoxEbtKjtETf0dfgrFcvBszesLLFVOud4ut5noKVNnbqWTP1jc3fpo7waqgHQNzGvycLGowe213efD/WCGqY+OKFYWvdI9VqldtI/i1aiR+Fdpq9zpvPqx8IPDN7wTX40bhvE1HhukpmytuVTSNRtXM6RI+poGtcrpJNtyN3JsquqIu4x47Vf7TwkKG6vw3c6m3XHCMNo6tpmNdFS1Ecr5HJMquRWpo5NFRF1VdDnGZZ4puHAfw3hLrRPDiC1NpK11rdUdTSSvgqONdDxrV7hzmoujkXc5UXVOUCT8JZkRYjxTNhm6YYveGby2kS4Q0d2ZFrUUyu2eMY6N7m6tcqI5qqjm7SapvO3c1r2Kx7Uc1yaKipqioQflvhikqs1ocSQZd4tssVvoJIUuOKrvPNULLKqbUMMLppGrHo3V0iqiKqN2UXlJxA8qemp6SFIaWCKGNF12I2I1PIh6gAAAAXkICt3xncIn6NRf2tSfV5CArd8Z3CJ+jUX9rU3cC1XN0fXSrr6Pzolq+A53plH4yqvtNLIlbuA53plH4yqvtNLInvjf3272pRZ9nTuAAc5aAAAAAAAAo9kd3juen0i6/hULgYC+KrDPiml+5YU/yO7x3PT6RdfwqFwMBfFVhnxTS/csO7xz69fa/jDPY1RudCADhNAAAAAAAAAAAAAAAAAAAAAAAAAAABzN+wtWXbGFnxDR3t1DLbI542QrTNlZJxqNRyu1VF3Ixumip/HU6YHqmqaZxhExijy95Vsu9mrqJuJrjTyXR80l0mRrHLWOfC2Jqqm5ESNrGIxv6KIi6oqrqfc2WlS6rqqynxPPDUyXVt3hctJG9sUq06QTNc1258b26rouitVdUXchIALY4TciMMf2/PzBGWHM3vCDLvV2C5tuUsF1scrpqWrSNrmuV8TopEfHuRUc1y7k00VEVOTRfDCuA6TCVxZNQV88lOy2QWxsErWqukT5H8Yrk3q5zpn6pycmiJodaDxpq8uTHmTljHFwVwyzjubrqlVepVZcLsy79zTsa+mkZFHG1YXp3THNSJio/XVF2tdUdoedPlj1DcEuVBf5KatS6ddNqOkjSFz1hkhkVYk0btvZKque3TVzWu0111kEHvlNzDDHmRlhwOFMtpsJ3Ghmo8T1U8EVFBSVNPPSxKk6wtVjJGrprG5WqjXabl2UXRF1Ve+AK7lyq5OarWmIiNQADwkAAAAAAB4AAI0o79iF9bfMHVF6m69xXqOGkrEhi2kopWJO16N2dldmNs0aqqb3M18JsrHjuKoop4kbcLzWNra6JIaajbDIyOnqVhdq10mio1VRu1qiv0VUam9Evq4PXH54vOaHcg5O25jYWudfVU0datPHA1HpVVKJHBK1XuYmzIq6a7TF7ldF00XTRUU5OTFGMafMa40tDUz3Kjo76kFRTPpmcXT2/qCOd7+Ma1FSRJJERiKqq7XZ03K5FPBq5mYnmw5+cmqEsA4SkzZw1VMoNaW6wSVkMVS2GSm1kjhlVUikc1qqujtF0RNVREVVREQ+KXM2y18VuvkdXPTWaptdVck42lR3HRRLAqSJI167OnGomxorlVVRdlWKiuTXOmkzQ6DEeGm4iqrLM+ukpktde2vRjI2vSZUjfHsO2v8ASrZHcm/kOZpMrHWupt8llxXcaKK2SztoaZYIpYoKSZWudS6ObvjarGLGqrqzZRNVb3JrbRmHJb8Z41TEC3FsEN0p6a32+VI1kjRaCOd7W7LtNP03b3a6qicuiHR02Zdkq71Db4qC7ok1WyhZUyU2xHxz6VKpjF1XaRVjcnK3RHdyuil2W/bjLGrDHvj+3nGmXnessrRdaTE8cVbVUcmIWRtqXxoxyRq1Go57GqmiOejGbS+HZRfAZEWBkivsdzW8zuc28vvKx8SxEV7qbqfi/l2dlVXXl18Om422FcRQ4rwhRYhp6CsooKyJs0UdW1qPVjmo5F7lypoqL8pzVBfqvE0uK6uTEL7BQWe4S2yJ8bYk2HRRsV00rpGqm9z9zdybKIq667vEVXeemZ1f1CcKdbdVmFP/AK3y4ns1ykttxqKdlLVpxaSw1LGK5Y1exdO6btvRHIqbnKi67tNPVZd19bie23qqxnc6iWgkZPFFPFG5iSbE0b1RqIiNRzZlTRE1TYZou7RcCixstqxzdaS6XWe7Rz9bKW2xUrGubPPNDK53F6bkRyRueqq7RERd+hqkzVposy6q7LPdJcMJh+nqZImwJ/2OVa2eCWSRm5ybKsRrtNrRGKummqrbTavx6uyOjb0ImaW3pcoKGiwvR2Snv1ckUdj7HaqR0bFdVUeq6JyaMkRHPTaRP9S7uTTb0mAY6O/RXGK71GzFd33ZkCxM2UV1N1NxevLsozei8uvh8BrMZ43RLdcLZapLhQXKjqKB6yviRiSwyV7YHbOuq6LsyN3omqKit1RUUzs08T3TC+X9RV2CamZeH7S0jahiva9Y2ulczRN+rmxqxF8Cvap5xv1zETPrYx+3mf4w7cHFNzPw4tDS1SpUujmszL69Y2tcsNK5jnI9W67Tk7hUVWoqNVW7Wm0mvsuY9gZWUVLJHWNmqo2S7DI0l4pr1fsOdsK7VruLcqObtJpouqIqKUaC5/1e80OvBxNFmjh24S0EdLDXPfXUT7lCiNYu1TN0/wAxFR+jkXVNzdVbr3SNPCnzYsU3Uzn2i+wRVHW9UllpWo1ja12xTvdo5VRFemyvhavKiJvHJ7n/AFRmh3oOIdmnhxah8NNBcqvSojpo308G22Vz6hKdNF10ROMX/Vpu7pNU3n63My0udTqtovDGSU9bUzudA3WkSklSKZJERyqqo5d2zta+DXUcnuf9TNDtga+yXenv1ip7tSxSxwVDEkj4xWrtNXejkVqq1UVNFRUVUVFNgVTExOEvQACAAAA02J8M2/FVkbb6980Lop4qumqadyNlpp43I6ORiqipqip4UVFTVFRUVUNyCaappnGNZMYuLvGCLpfaRjbji+t4+mdHNRvp6aJjIZmPR6SPYqKkirs7KoujdlXaIirqfdbgNLlBfY6+9VMnXm0x2qdWQxs2NhJdJG6Jy6zO3Lqm5P469iCyL9cc0T+zzlhwlRlw6svMt0qsQ1L6mapt9XJs08bWq+jVVbomm5HKu9PB4NDxsWWMmGqulqLPiq4QuYtQypR8ET0qI5amSp2dFTRjmvmkRrk/0u0VFVEVJBB65Tcwy4836bjLCM6DKN1Ddai6Li241NdNVUdY6oqIY3q6WmR7Ec75dpj1Rf47005DqcK4WkwtHV0kN3qKq3vmfLS000TEWmR71erNtE2noiuXTa3om7fynRgivhFyuMKpIpiNTibtltbsQYLnw9fK+oqEWvfcaasia2GalldI5+rFb8m25u/lY5WrqiqfFTl2+bE8l1hxDVQwuuL7mlLxEbkSR9I6lem0qaq3ZdtIngXwqm5O5AjhFyOaJ/JMsI6kyohfaIbf2Q1qMio7XRo7iItVSgn46Ny7uVztzvBpyaH3WZU0VxpKijr73XPp+qK2ro0iYyN9JNVPc9z0dou2rVe7ZRyaaL3W0SECeVXdpkhzFswrW0uI7dfLjfpK6rpKKeifpSxwslSWSN6u2W/oqixN5F8LvlTTpwCqquataYjAAB5SAAAAAAAA0mIcW4cwtHA6/wB0ipFqFVsMatc98miarssaiuVE8K6bjS3/ABsyO24VuWGqyjraK8XmChdO3u2uiej9rZVFTRyK3Tfyb9xp8QXW3YTz5ixBiaZKW2Vdl6ipK6RirFDMyZXyMc5E7lXNVipry7OhyFNFLUW60XinpZobbc8wWV1Ax8SsXiFaqbeyqatRzmucmqJuXXwnGv8ADrmaq3Exu6Yww556p3dMPsOA8S2NHbv1xMxMROM+rVMxVjTHNrpw5+edU80cyVbvmJgqw3xbRdsQ0dLWN2duN2qpFtfo8Y5EVGa+DaVDpHzQx07p5JGMia1XukcqI1E011Vfk08JB1pxHh3BVlxphrG1JJUXWpudVULQrA6R92imX/K4tURdvVujf+nTfodne8TUNJgS64dprA+a50eHurHWSRj3x8UrNhIlkT9LTRWqiLqqIW2OMM0VVVzHN0c+MTz806+fm6p18zNwziHJXRRZoqmJmIzThlqj/H/KnVhHP0zMc8Y1RPM3tjx9g/Et0W3WS+U9XUoxZWsa1zeMYi6K5iuREeifK3VD87P8HdlHY71+peuPHdT8Um1s8b+z29Njb/6ddf4ERWLEdJUZmYAnfi+O7QMZNTtbR27qajoXSQbMcCLoq7aqiJsudqiJvRDUUW0mBm4Bu2K7lDdW3HiH2CktMbqh03VG22ZkrtNWcknGqvJrvMXpe5lxiImcZ2c/NTMR62ucZ6Z1auiOvP8A8nweLmFU1RGETh/ljGNVcTVP+vGYpyxMxNNMf5R/lEYTM8VOOcJUeJ2YdqL3TMusk7aZtIm0snGOajmoqIm5NHJvXdvTeeMWYmCpsTdj8WI6N1w41YEjRV2VkTljR+myr/8Ap11/gc9hihWTN7MieONrKp7qOGOoczeidSpyL8m0uu4jua6Wus4O9NlhR0s3Zk18VF1t4lySx1TJkc6dV00Rm5X8Zrpv5S+7xhdt0zVOH/8AWGvnyzhFOvXP5EsXBeIeC364t0555rWaYmMKdJTmmuYy+pRqnn59c1QsYD4iR7YWNkdtPRqIrvlX5T7O0+OkAABeQgK3fGdwifo1F/a1J9XkICt3xncIn6NRf2tTdwLVc3R9dKuvo/OiWr4DnemUfjKq+00siVu4DnemUfjKq+00sie+N/fbvalFn2dO4ABzloAAAAAAACj2R3eO56fSLr+FQuBgL4qsM+KaX7lhT/I7vHc9PpF1/CoXAwF8VWGfFNL9yw7vHPr19r+MM9jVG50IAOE0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA1K4as643TFq0qLdkouoEn1XdDtq/Z05P0lXfy+A0FLlnZqC4RV9Bc7zS1TKiqndNFVI10qVMvHSxu7nRWLJ3ScitVV0VNVO1BZF6uNUowhzVlwPZrJSPoo31VZQpKstPRV0iTxUmrldsxNcm5EVy6aqqom5FRNx70eFaKiqb/ADx1lc917l46o25EVGO4psWsfc9z3DGJ4f0UXl113wE3a5xmZ1mEOOpMuLPb62jq7fcrzSTQW6K1yOgq1Z1VBEjuKSVETe5m07R6aO7pUVVTcYzsp8LSwTw1Dq+ZlTFVxVLVmRiT9U8Xxr1RjU0eqwxuRzdNHN2uVVVe6B65RcxxzIyw4SPKu0R3Ca5pfcQdc5auKtW4dVtSVskcHU+7Rmzo6NEa5qoqLoi8qamw7ALT14S5Orrm6VLnHdlR06KjpmQJAmvc6q3YREVNd67+U9cdYypsC4QqcQ1lDPVU1LG6aZIpGMVGNTV2ivVEV2mujU3uXd/E1c+ZdLS4qkt1VZayGgir3W6S5ukjVjJEo0q0VWIu3srGrk103KnJv1LaZv1xmjV5Yf0j/GOZsrDgyPDs1qhoLvcn2+20clHFSzzq9HMc5mwjk3IuwjNGqqK7Ry6r8q5YEtFwqbxNFU11B15hWG4x0cqNZU6s4vbc1zVRH7CI3bboqoia66Jpo8NX+vv+bFdNxVZRW6ow9R1VJFJOj0ckk0+kmwmqMerdnVN/Im9dDTV878PYkxgtVecS1dvsFkt9xjhZcHLI921UrJvcuiq9IWIqLu3LyanqKLmecaufCPGY+8oxjB1EmV+G31sVW2W4xTwPo5aaSOo0WmfTRvijczd4WSSNcjtUcjl1Q80ynwo2qSVnV7WPokoKmHqlVZVxce+ockqKmqq6SSRVVFTXaVOTcfb8eTRXWgs90sFdbKuviqFY3qiCR7HRsdImiI5dUVjVXa/RR2jV366aq15pRufQUS2a61UKUdpmqLhNJAjkSvV0cTnMaqauR7U29lERNpVRNEERwiY5p8f0P8WxnyqsFRc7hXPuF4SWvex82lSi67FT1SxEVW66NkVdNVXuV2eREROols0M2J4L2+qquNgp308cKPTikR7mq52mmu13Dd+vIn8VOHqMy+tFLOjbRdrs9r7tOu3JAxY46KZrZGpyJpo/uOVVRE2l1XU2VDmZb7njtuG6C11s+srIX1COjbxbnUzalHujV20kfFvam3por+5TXlPNVu/MYzzxGPlKYml80WVOH6Gmt0MVddnJbOMWhc+oar6VXo9F4t2zqiaSKmzrsro3VF2U0ybbltY7NWRT2esulvRtL1JJDS1PFxzM23varmomiK10r9nY2dEXTkRETsQVTwi5OupOWHERZW4ciWFWzV/+TNLVMTjGoiTyJIj5mojdGOVJX67OjXeFFP1csLGtFHS9cLsjI4rfE3SobqiUMiyQL+jyo5dV/wCbwnbAcouf9jLDjoMuLRTUiUUFzvDaKOvZcaekWpRY6Z7ZuORsaK3VGbe/ZVV0Tcmibj7hy+ttNUxVNNdrxDPG6tXjWVDUc5KqRJZWquzybbUc3TRUVOXTcdcCNPc2pyw1eH7Bb8M2JlptjHNp2ySS6O03uke6R66IiIiK5yro1ERPAiG0AK6pmqcZSAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfjmNe3Ze1HIvgVNT9AA/FY1XI5WoqpyLpvQ/QAPlscbU0axqJrroieH5RsN29vZTa001036H0BgnGQ/Nhu3t7KbWmmum/Q/QEAAAAAAvIQFbvjO4RP0ai/tak+ryEBW74zuET9Gov7Wpu4Fqubo+ulXX0fnRLV8BzvTKPxlVfaaWRK3cBzvTKPxlVfaaWRPfG/vt3tSiz7OncAA5y0AAAAAAABR7I7vHc9PpF1/CoXAwF8VWGfFNL9ywp/kd3juen0i6/hULgYC+KrDPiml+5Yd3jn16+1/GGexqjc6EAHCaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAc7izA+HMbUMdHiKjlqIWNlj2Y6iSHaZIxWPaqsciq1WrvRfkQxo8u8MR1Mc7oa2WRla24azV00m3O2BKdHORXd1/lJsqi7l36pqup1YLIvVxGWKpwRlhy2GsvsNYTuSVtliro5G0jaCNs9fNOyKna9XsiY17lRrWq5dlE5EXRNx93DAOHLpcL1WVsVZJJeqNtBXIlZK1ksLddliNR2jdNp+it0Xu3b950wE3rkzmzTiZY1OSq8uML1uI232aKvbXt2NZo6+Zm0rYnQ6qiO0VVjcrVVU3oia8h5w5YYRp2bMNLWtTiqKD/AL/N+hRv26ZP0v8AQ5VX+Ou/U7EE6e5qzT3mWNjkZMtcKSrIslNWu4xtax2tdNvSsVFqE/S/1KiL/DTdoc5acvL7a8zZ7tRXGroaFKqF7EiuUksM1MyBkXFSU72r3a7Cau2vAjk0XVFlEHqnhNyImMccUZYPAACh6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAXkICt3xncIn6NRf2tSfV5CArd8Z3CJ+jUX9rU3cC1XN0fXSrr6Pzolq+A53plH4yqvtNLIlbuA53plH4yqvtNLInvjf3272pRZ9nTuAAc5aAAAAAAAApbwcrLccR8EPOTD9np+qLhcLhcaWmh2kbtyPp0a1NVVETVVTlUljD+PM87JhO12ZeDnWzLRUkNKsqYlom7asYjddPBrpqRVhDIfhW5dQ3ShwJjzCNroK+ukrnxO1lVz3LpqqvgVU7lGpom7cdJ2FcOPpUwf6Fn5Y+o4VFq7crq0luaZnHnmrHVEdGDJRmpiIwnwSF20M8/m213rPRDtoZ5/NtrvWeiI97CuHH0qYP9Cz8sOwrhx9KmD/Qs/LGfk9jba77nm9ZquvwSF20M8/m213rPRDtoZ5/NtrvWeiI97CuHH0qYP8AQs/LDsK4cfSpg/0LPyw5PY22u+55marr8EhdtDPP5ttd6z0Q7aGefzba71noiPewrhx9KmD/AELPyw7CuHH0qYP9Cz8sOT2NtrvueZmq6/BIXbQzz+bbXes9EO2hnn822u9Z6Ij3sK4cfSpg/wBCz8sOwrhx9KmD/Qs/LDk9jba77nmZquvwSF20M8/m213rPRDtoZ5/NtrvWeiI97CuHH0qYP8AQs/LDsK4cfSpg/0LPyw5PY22u+55marr8EhdtDPP5ttd6z0Q7aGefzba71noiPewrhx9KmD/AELPyw7CuHH0qYP9Cz8sOT2NtrvueZmq6/BIXbQzz+bbXes9EO2hnn822u9Z6Ij3sK4cfSpg/wBCz8sOwrhx9KmD/Qs/LDk9jba77nmZquvwSF20M8/m213rPRDtoZ5/NtrvWeiI97CuHH0qYP8AQs/LDsK4cfSpg/0LPyw5PY22u+55marr8EhdtDPP5ttd6z0Q7aGefzba71noiPewrhx9KmD/AELPyw7CuHH0qYP9Cz8sOT2NtrvueZmq6/BIXbQzz+bbXes9EO2hnn822u9Z6Ij3sK4cfSpg/wBCz8sOwrhx9KmD/Qs/LDk9jba77nmZquvwSF20M8/m213rPRDtoZ5/NtrvWeiI97CuHH0qYP8AQs/LDsK4cfSpg/0LPyw5PY22u+55marr8EhdtDPP5ttd6z0Q7aGefzba71noiPewrhx9KmD/AELPyw7CuHH0qYP9Cz8sOT2NtrvueZmq6/BIXbQzz+bbXes9EO2hnn822u9Z6Ij3sK4cfSpg/wBCz8sOwrhx9KmD/Qs/LDk9jba77nmZquvwSF20M8/m213rPRDtoZ5/NtrvWeiI97CuHH0qYP8AQs/LDsK4cfSpg/0LPyw5PY22u+55marr8EhdtDPP5ttd6z0Q7aGefzba71noiPewrhx9KmD/AELPyw7CuHH0qYP9Cz8sOT2NtrvueZmq6/BIXbQzz+bbXes9EO2hnn822u9Z6Ij3sK4cfSpg/wBCz8sOwrhx9KmD/Qs/LDk9jba77nmZquvwSF20M8/m213rPRDtoZ5/NtrvWeiI97CuHH0qYP8AQs/LDsK4cfSpg/0LPyw5PY22u+55marr8EhdtDPP5ttd6z0Q7aGefzba71noiPewrhx9KmD/AELPyw7CuHH0qYP9Cz8sOT2NtrvueZmq6/BIXbQzz+bbXes9EO2hnn822u9Z6Ij3sK4cfSpg/wBCz8sOwrhx9KmD/Qs/LDk9jba77nmZquvwSF20M8/m213rPRDtoZ5/NtrvWeiI97CuHH0qYP8AQs/LDsK4cfSpg/0LPyw5PY22u+55marr8EhdtDPP5ttd6z0Q7aGefzba71noiPewrhx9KmD/AELPyw7CuHH0qYP9Cz8sOT2NtrvueZmq6/BIXbQzz+bbXes9EO2hnn822u9Z6Ij3sK4cfSpg/wBCz8sOwrhx9KmD/Qs/LDk9jba77nmZquvwSF20M8/m213rPRDtoZ5/NtrvWeiI97CuHH0qYP8AQs/LDsK4cfSpg/0LPyw5PY22u+55marr8EhdtDPP5ttd6z0Q7aGefzba71noiPewrhx9KmD/AELPyw7CuHH0qYP9Cz8sOT2NtrvueZmq6/BIXbQzz+bbXes9EO2hnn822u9Z6Ij3sK4cfSpg/wBCz8sOwrhx9KmD/Qs/LDk9jba77nmZquvwSF20M8/m213rPRDtoZ5/NtrvWeiI97CuHH0qYP8AQs/LDsK4cfSpg/0LPyw5PY22u+55marr8EhdtDPP5ttd6z0Q7aGefzba71noiPewrhx9KmD/AELPyw7CuHH0qYP9Cz8sOT2NtrvueZmq6/BIXbQzz+bbXes9EO2hnn822u9Z6Ij3sK4cfSpg/wBCz8sOwrhx9KmD/Qs/LDk9jba77nmZquvwSF20M8/m213rPRDtoZ5/NtrvWeiI97CuHH0qYP8AQs/LDsK4cfSpg/0LPyw5PY22u+55marr8EhdtDPP5ttd6z0Q7aGefzba71noiPewrhx9KmD/AELPyw7CuHH0qYP9Cz8sOT2NtrvueZmq6/BIXbQzz+bbXes9EO2hnn822u9Z6Ij3sK4cfSpg/wBCz8sOwrhx9KmD/Qs/LDk9jba77nmZquvwSF20M8/m213rPRDtoZ5/NtrvWeiI97CuHH0qYP8AQs/LDsK4cfSpg/0LPyw5PY22u+55marr8EhdtDPP5ttd6z0Q7aGefzba71noiPewrhx9KmD/AELPyw7CuHH0qYP9Cz8sOT2NtrvueZmq6/BIXbQzz+bbXes9EO2hnn822u9Z6Ij3sK4cfSpg/wBCz8sOwrhx9KmD/Qs/LDk9jba77nmZquvwSF20M8/m213rPRDtoZ5/NtrvWeiI97CuHH0qYP8AQs/LDsK4cfSpg/0LPyw5PY22u+55marr8EhdtDPP5ttd6z0Q7aGefzba71noiPewrhx9KmD/AELPyw7CuHH0qYP9Cz8sOT2NtrvueZmq6/BIXbQzz+bbXes9EO2hnn822u9Z6Ij3sK4cfSpg/wBCz8sOwrhx9KmD/Qs/LDk9jba77nmZquvwSF20M8/m213rPRDtoZ5/NtrvWeiI97CuHH0qYP8AQs/LDsK4cfSpg/0LPyw5PY22u+55marr8EhdtDPP5ttd6z0Q7aGefzba71noiPewrhx9KmD/AELPyw7CuHH0qYP9Cz8sOT2NtrvueZmq6/BIXbQzz+bbXes9EO2hnn822u9Z6Ij3sK4cfSpg/wBCz8sOwrhx9KmD/Qs/LDk9jba77nmZquvwSF20M8/m213rPRDtoZ5/NtrvWeiI97CuHH0qYP8AQs/LDsK4cfSpg/0LPyw5PY22u+55marr8EhdtDPP5ttd6z0Q7aGefzba71noiPewrhx9KmD/AELPyw7CuHH0qYP9Cz8sOT2NtrvueZmq6/BIXbQzz+bbXes9EO2hnn822u9Z6Ij3sK4cfSpg/wBCz8sOwrhx9KmD/Qs/LDk9jba77nmZquvwSF20M8/m213rPRDtoZ5/NtrvWeiI97CuHH0qYP8AQs/LDsK4cfSpg/0LPyw5PY22u+55marr8EhdtDPP5ttd6z0Q7aGefzba71noiPewrhx9KmD/AELPyw7CuHH0qYP9Cz8sOT2NtrvueZmq6/BIXbQzz+bbXes9EO2hnn822u9Z6Ij3sK4cfSpg/wBCz8sOwrhx9KmD/Qs/LDk9jba77nmZquvwSF20M8/m213rPRDtoZ5/NtrvWeiI97CuHH0qYP8AQs/LDsK4cfSpg/0LPyw5PY22u+55marr8EhdtDPP5ttd6z0Q7aGefzba71noiPewrhx9KmD/AELPyw7CuHH0qYP9Cz8sOT2NtrvueZmq6/BIXbQzz+bbXes9EO2hnn822u9Z6Ij3sK4cfSpg/wBCz8sOwrhx9KmD/Qs/LDk9jba77nmZquvwSF20M8/m213rPRDtoZ5/NtrvWeiI97CuHH0qYP8AQs/LDsK4cfSpg/0LPyw5PY22u+55marr8EhdtDPP5ttb6z0Rp8KW3HD4c5sZY1wbJhZ1+pIn0tFJXRVa7MNC+Jy7ca6cqIu9E5Tlewrhx9KmD/Qs/LGPXZfcNq42ypt9Zmhg+SmqYnQys4pqbTHIrVTVKbVNyqTFm1ETFNduMcMcJr2xPTjsM09MT4Oi4DnemUfjKq+00siRHwcMsb/lHkhDg/ElRQT1sdbPUbdDI58ew9UVqaua1dd3yEuHM4yuU3OFXK6JxiZlbaiYoiJAAYVgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP/2Q==", title: "Airport Business Operations", date: "09 Jun 2022" },
 ];
 let certIdx = 0;
-function openCert(i) {
-  certIdx = i;
-  renderCert();
-  document.getElementById('certLightbox').classList.add('open');
-  document.body.style.overflow = 'hidden';
-}
-function closeLightbox() {
-  document.getElementById('certLightbox').classList.remove('open');
-  document.body.style.overflow = '';
-}
-function closeCert(e) {
-  if (e.target === document.getElementById('certLightbox')) closeLightbox();
-}
-function shiftCert(dir) {
-  certIdx = (certIdx + dir + certSlides.length) % certSlides.length;
-  renderCert();
-}
+function openCert(i) { certIdx = i; renderCert(); document.getElementById('certLightbox').classList.add('open'); document.body.style.overflow='hidden'; }
+function closeLightbox() { document.getElementById('certLightbox').classList.remove('open'); document.body.style.overflow=''; }
+function closeCert(e) { if(e.target===document.getElementById('certLightbox')) closeLightbox(); }
+function shiftCert(dir) { certIdx=(certIdx+dir+certSlides.length)%certSlides.length; renderCert(); }
 function renderCert() {
-  const s = certSlides[certIdx];
-  document.getElementById('certLbImg').src = s.src;
-  document.getElementById('certLbTitle').textContent = s.title + ' · ' + s.date;
-  const dots = document.getElementById('certLbDots');
-  dots.innerHTML = certSlides.map((_,i) =>
-    `<span class="cert-dot${i===certIdx?' on':''}" onclick="shiftCert(${i-certIdx})"></span>`
-  ).join('');
+  const s=certSlides[certIdx];
+  document.getElementById('certLbImg').src=s.src;
+  document.getElementById('certLbTitle').textContent=s.title+' · '+s.date;
+  const dots=document.getElementById('certLbDots');
+  dots.innerHTML=certSlides.map((_,i)=>`<span class="cert-dot${i===certIdx?' on':''}" onclick="shiftCert(${i-certIdx})"></span>`).join('');
 }
-document.addEventListener('keydown', e => {
-  const lb = document.getElementById('certLightbox');
-  if (!lb.classList.contains('open')) return;
-  if (e.key==='ArrowRight') shiftCert(1);
-  if (e.key==='ArrowLeft')  shiftCert(-1);
-  if (e.key==='Escape')     closeLightbox();
+document.addEventListener('keydown',e=>{
+  const lb=document.getElementById('certLightbox');
+  if(!lb.classList.contains('open')) return;
+  if(e.key==='ArrowRight') shiftCert(1);
+  if(e.key==='ArrowLeft') shiftCert(-1);
+  if(e.key==='Escape') closeLightbox();
 });
 </script>
 
-
-<!-- ═══ LINKEDIN ═══ -->
 <section class="sec bg" id="linkedin">
-  <div class="sh"><span class="sh-tag">On LinkedIn</span><h2 class="sh-title">Recent Thinking</h2><div class="sh-rule"></div></div>
+  <div class="sh">
+    <span class="sh-tag">On LinkedIn</span>
+    <h2 class="sh-title">Recent Thinking</h2>
+    <div class="sh-rule"></div>
+  </div>
   <p class="sh-sub">Perspectives shared with the aviation community — click any card to read the full post.</p>
 
   <div class="li-posts-grid">
@@ -1466,37 +1535,55 @@ document.addEventListener('keydown', e => {
     <a class="li-post" href="https://www.linkedin.com/posts/vishalvsrivastava_airport-disruption-passengers-activity-7402593430381461504-Diwc" target="_blank">
       <div class="li-post-tag">Disruption Management</div>
       <p class="li-post-text">"The hardest part of an airport disruption is watching good people take blame for things they cannot control." Having stood behind a counter at 2 AM with limited information and a queue of frustrated travellers — you never forget it.</p>
-      <div class="li-post-footer"><span class="li-read">Read on LinkedIn →</span><span class="li-topic">Ops · Leadership</span></div>
+      <div class="li-post-footer">
+        <span class="li-read">Read on LinkedIn →</span>
+        <span class="li-topic">Ops · Leadership</span>
+      </div>
     </a>
 
     <a class="li-post" href="https://www.linkedin.com/posts/vishalvsrivastava_passengerexperience-airlineinnovation-aiinaviation-activity-7459846925996146688-NSBt" target="_blank">
       <div class="li-post-tag">AI · Passenger Concierge</div>
       <p class="li-post-text">Your hotel has a concierge. Your bank has a personal adviser. Your airline has… a FAQ page. That gap has existed for decades. AI is about to close it — right inside the app already on every passenger's phone.</p>
-      <div class="li-post-footer"><span class="li-read">Read on LinkedIn →</span><span class="li-topic">AI · CX</span></div>
+      <div class="li-post-footer">
+        <span class="li-read">Read on LinkedIn →</span>
+        <span class="li-topic">AI · CX</span>
+      </div>
     </a>
 
     <a class="li-post" href="https://www.linkedin.com/feed/update/urn:li:activity:7315611739843182592/" target="_blank">
       <div class="li-post-tag">Baggage Management</div>
-      <p class="li-post-text">Real-time baggage tracking sounds simple — until you try implementing it. During my time at Qatar Airways, I led the design of a system built around passenger experience, not just IATA compliance. The biggest challenge? Data fragmentation.</p>
-      <div class="li-post-footer"><span class="li-read">Read on LinkedIn →</span><span class="li-topic">HAQIBA · IATA 753</span></div>
+      <p class="li-post-text">Real-time baggage tracking sounds simple — until you try implementing it. At Qatar Airways I led a system built around passenger experience, not just compliance. The biggest challenge? Data fragmentation across disconnected systems.</p>
+      <div class="li-post-footer">
+        <span class="li-read">Read on LinkedIn →</span>
+        <span class="li-topic">HAQIBA · IATA 753</span>
+      </div>
     </a>
 
     <a class="li-post" href="https://www.linkedin.com/posts/vishalvsrivastava_digitaltransformation-aviationindustry-managementlessons-activity-7251451408648921088-7hst" target="_blank">
       <div class="li-post-tag">DigiYatra</div>
-      <p class="li-post-text">Back in September 2019, the first passengers experienced DigiYatra during trials at Delhi International Airport. The winning formula? Shifting focus from technology to the benefits for passengers. That shift changed everything.</p>
-      <div class="li-post-footer"><span class="li-read">Read on LinkedIn →</span><span class="li-topic">Biometrics · IGI Delhi</span></div>
+      <p class="li-post-text">Back in September 2019, the first passengers experienced DigiYatra during trials at Delhi Airport. The winning formula? Shifting focus from technology to the benefits for passengers. That shift changed everything.</p>
+      <div class="li-post-footer">
+        <span class="li-read">Read on LinkedIn →</span>
+        <span class="li-topic">Biometrics · IGI Delhi</span>
+      </div>
     </a>
 
     <a class="li-post" href="https://www.linkedin.com/posts/vishalvsrivastava_airports-airlines-passenger-activity-7400786642267209728-QbUd" target="_blank">
       <div class="li-post-tag">Indian Aviation</div>
-      <p class="li-post-text">India Doesn't Just Need More Airports — It Needs More Airlines. Passenger numbers are rising, infrastructure is scaling. Yet beneath this growth lies a structural imbalance: our airline ecosystem is not keeping up.</p>
-      <div class="li-post-footer"><span class="li-read">Read on LinkedIn →</span><span class="li-topic">Policy · Industry</span></div>
+      <p class="li-post-text">India Doesn't Just Need More Airports — It Needs More Airlines. Passenger numbers are rising, infrastructure is scaling. Yet beneath this growth lies a structural imbalance: the airline ecosystem is not keeping up.</p>
+      <div class="li-post-footer">
+        <span class="li-read">Read on LinkedIn →</span>
+        <span class="li-topic">Policy · Industry</span>
+      </div>
     </a>
 
     <a class="li-post" href="https://www.linkedin.com/posts/vishalvsrivastava_misusing-wheelchair-wheelchairservice-activity-7397876177018920960-L2O7" target="_blank">
       <div class="li-post-tag">Passenger Welfare</div>
-      <p class="li-post-text">A lot has been said about passengers misusing wheelchair services. The conversation misses the human side. Airports are large, walking distances long — not everyone feels confident navigating them alone.</p>
-      <div class="li-post-footer"><span class="li-read">Read on LinkedIn →</span><span class="li-topic">CX · Empathy</span></div>
+      <p class="li-post-text">A lot has been said about passengers misusing wheelchair services. The conversation misses the human side. Airports are large, walking distances are long — not everyone feels confident navigating them alone.</p>
+      <div class="li-post-footer">
+        <span class="li-read">Read on LinkedIn →</span>
+        <span class="li-topic">CX · Empathy</span>
+      </div>
     </a>
 
   </div>
@@ -1508,13 +1595,12 @@ document.addEventListener('keydown', e => {
 
 </section>
 
-<!-- ═══ CONTACT ═══ -->
 <section class="sec bg" id="contact">
   <div class="sh"><span class="sh-tag">Contact</span><h2 class="sh-title">Get in Touch</h2><div class="sh-rule"></div></div>
   <div class="contact-grid">
     <div>
-      <p class="contact-intro">"If you are navigating a complex transformation — a new airport opening, a self-service overhaul, an AI programme that needs to actually work on the ground — I would like to be part of that conversation."</p>
-      <p class="contact-note">Available for VP/SVP advisory roles, transformation leadership engagements, and strategic consulting across airlines, airports, and aviation technology companies. Based in New Delhi / NCR — available regionally and internationally.</p>
+      <p class="contact-intro">"If you are navigating a transformation where the technology exists but the operational grounding is missing — a new airport opening, a self-service programme that needs to work at scale, an AI initiative that has to survive contact with the real world — I would like to be part of that conversation."</p>
+      <p class="contact-note">Available for VP/SVP advisory roles, transformation leadership engagements, and strategic consulting across airlines, airports, and aviation technology organisations. Based in New Delhi / NCR — available regionally and internationally. Fluent in boardroom conversations, operations reviews, and technical design sessions.</p>
     </div>
     <div class="contact-links">
       <a class="cl" href="mailto:vishal.vsrivastava@gmail.com">
