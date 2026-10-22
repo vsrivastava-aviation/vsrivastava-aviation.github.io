@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Vishal Srivastava — Aviation Domain Expert & Business Transformation Executive. 25 years driving customer experience innovation across airlines and airports.">
-<meta name="keywords" content="Aviation Domain Expert, Business Transformation Executive, Aviation Digital Transformation, Passenger Experience, Airport Technology, Airline IT, IATA 753, DigiYatra, Baggage Management, Smart Airport">
-<title>Vishal Srivastava | Aviation Domain Expert</title>
+<meta name="description" content="Vishal Srivastava — Independent Airline Digital Transformation Consultant. 25+ years across airline operations, airport systems and aviation technology, advising airlines and airports on digital and AI transformation.">
+<meta name="keywords" content="Airline Digital Transformation Consultant, Aviation AI Consultant, Independent Aviation Advisor, Aviation Domain Expert, Business Transformation Executive, Aviation Digital Transformation, Passenger Experience, Airport Technology, Airline IT, IATA 753, DigiYatra, Baggage Management, Smart Airport">
+<title>Vishal Srivastava | Airline Digital Transformation Consultant</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box;}
@@ -674,6 +674,56 @@ footer{background:var(--dark);padding:22px 52px;display:flex;justify-content:spa
 .cert-lb-prev{left:8px;} .cert-lb-next{right:8px;}
 .cert-lb-close:hover,.cert-lb-prev:hover,.cert-lb-next:hover{background:var(--gold);}
 @media(max-width:760px){.cred-cols{grid-template-columns:1fr;}}
+
+/* ── ABOUT (consulting) ── */
+.ab-top{display:grid;grid-template-columns:1.35fr 1fr;gap:40px;align-items:start;margin-top:22px;}
+.ab-lede{font-family:"Playfair Display",serif;font-size:21px;line-height:1.45;color:var(--dark);font-weight:600;margin-bottom:16px;max-width:620px;}
+.ab-body{font-size:13.5px;color:var(--mid);line-height:1.8;max-width:620px;margin-bottom:20px;}
+.ab-body p+p{margin-top:10px;}
+.ab-main .about-quote{font-size:14px;margin-bottom:0;max-width:620px;}
+.ab-panel{background:var(--dark);border-radius:var(--radius);padding:26px 26px 22px;color:#fff;position:relative;overflow:hidden;border-top:3px solid var(--gold-l);}
+.ab-panel::after{content:"";position:absolute;right:-90px;top:-90px;width:240px;height:240px;background:radial-gradient(circle,rgba(234,88,12,0.16) 0%,transparent 65%);pointer-events:none;}
+.ab-panel-lbl{font-size:9.5px;letter-spacing:3px;text-transform:uppercase;color:var(--gold-xl);font-weight:600;margin-bottom:8px;}
+.ab-panel-title{font-family:"Playfair Display",serif;font-size:19px;line-height:1.3;font-weight:700;margin-bottom:18px;}
+.ab-sides{list-style:none;display:flex;flex-direction:column;border-top:1px solid rgba(255,255,255,0.1);}
+.ab-sides li{display:grid;grid-template-columns:92px 1fr;gap:12px;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.1);}
+.ab-side-k{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--gold-xl);font-weight:600;padding-top:2px;}
+.ab-side-v{font-size:13px;color:#fff;line-height:1.5;}
+.ab-side-v em{font-style:normal;font-size:11.5px;color:rgba(255,255,255,0.55);}
+.ab-neutral{display:flex;gap:10px;align-items:flex-start;margin-top:16px;font-size:12.5px;line-height:1.55;color:rgba(255,255,255,0.8);}
+.ab-check{flex-shrink:0;width:20px;height:20px;border-radius:50%;background:rgba(34,197,94,0.15);color:#4ade80;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;}
+.ab-block{margin-top:40px;}
+.ab-offers{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;}
+.ab-offer{background:#fff;border:1px solid var(--rule);border-top:2px solid var(--gold-l);border-radius:var(--radius);padding:18px 18px 16px;display:flex;flex-direction:column;transition:box-shadow .2s,transform .2s;}
+.ab-offer:hover{box-shadow:0 8px 24px rgba(28,43,58,0.08);transform:translateY(-2px);}
+.ab-num{font-family:"Playfair Display",serif;font-size:22px;color:var(--gold-l);font-weight:700;line-height:1;margin-bottom:10px;}
+.ab-offer h4{font-size:13.5px;font-weight:600;color:var(--dark);margin-bottom:6px;}
+.ab-offer p{font-size:12.5px;color:var(--mid);line-height:1.6;flex:1;}
+.ab-out{margin-top:14px;padding-top:10px;border-top:1px dashed var(--rule);font-size:11.5px;color:var(--gold);font-weight:600;}
+.ab-out::before{content:"→ ";}
+.ab-steps{list-style:none;display:grid;grid-template-columns:repeat(4,1fr);gap:0;position:relative;}
+.ab-steps::before{content:"";position:absolute;top:15px;left:16px;right:16px;height:1px;background:var(--gold-b);}
+.ab-steps li{position:relative;padding-right:22px;}
+.ab-step-n{position:relative;z-index:1;display:flex;align-items:center;justify-content:center;width:31px;height:31px;border-radius:50%;background:#fff;border:1.5px solid var(--gold-l);color:var(--gold);font-weight:600;font-size:13px;margin-bottom:12px;}
+.ab-steps li:last-child .ab-step-n{background:var(--gold-l);color:#fff;}
+.ab-steps h4{font-size:13.5px;font-weight:600;color:var(--dark);margin-bottom:4px;}
+.ab-steps p{font-size:12.5px;color:var(--mid);line-height:1.6;}
+.ab-cta{margin-top:40px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;background:var(--gold-p);border:1px solid var(--gold-b);border-radius:var(--radius);padding:18px 24px;}
+.ab-cta p{font-size:14px;color:var(--dark);}
+.ab-cta .btn-primary{color:#fff;}
+@media(max-width:960px){
+  .ab-top{grid-template-columns:1fr;}
+  .ab-offers{grid-template-columns:1fr 1fr;}
+  .ab-steps{grid-template-columns:1fr 1fr;row-gap:24px;}
+  .ab-steps::before{display:none;}
+}
+@media(max-width:580px){
+  .ab-lede{font-size:18px;}
+  .ab-offers,.ab-steps{grid-template-columns:1fr;}
+  .ab-sides li{grid-template-columns:1fr;gap:4px;}
+  .ab-panel{padding:22px 18px 18px;}
+  .ab-cta{padding:16px;}
+}
 </style>
 </head>
 <body>
@@ -684,10 +734,10 @@ footer{background:var(--dark);padding:22px 52px;display:flex;justify-content:spa
   <div class="hero-glow"></div>
   <div class="hero-inner">
     <div class="hero-left">
-      <div class="eyebrow"><span>Aviation Domain Expert &middot; Business Transformation Executive</span></div>
+      <div class="eyebrow"><span>Airline Digital Transformation Consultant &middot; Independent Advisor</span></div>
       <h1 class="hero-name">Vishal Srivastava</h1>
-      <p class="hero-title">Helping airlines and airports solve complex operational challenges through deep aviation domain expertise, product strategy, digital transformation, and AI-enabled business solutions.</p>
-      <p class="hero-desc">Aviation Business Transformation Executive with 25+ years spanning airline operations, airport systems, aviation technology, consulting, and enterprise product leadership — progressing from frontline airline operations to enterprise product leadership and business transformation. Deep operational expertise across passenger experience, ground operations, baggage management, departure control, and airport operations translates business challenges into product strategy, digital capability, and AI-enabled solutions that deliver measurable operational and commercial outcomes.</p>
+      <p class="hero-title">Helping airlines and airports turn digital and AI ambition into operational results &mdash; with advice from someone who has run the operation.</p>
+      <p class="hero-desc">Independent consultant with 25+ years across airline operations, airport systems and aviation technology. I advise CXO teams on AI and digital roadmaps, passenger experience, ground and baggage operations, and disruption management &mdash; and stay with them until the change lands with frontline teams. Vendor-neutral, operationally grounded, measured in outcomes.</p>
       <div class="hero-kpis">
         <div class="hkpi"><span class="hkpi-v">25+</span><span class="hkpi-l">Years in Aviation</span></div>
         <div class="hkpi"><span class="hkpi-v">150+</span><span class="hkpi-l">Airports</span></div>
@@ -695,7 +745,7 @@ footer{background:var(--dark);padding:22px 52px;display:flex;justify-content:spa
         <div class="hkpi"><span class="hkpi-v">2</span><span class="hkpi-l">IATA Working Groups</span></div>
       </div>
       <div class="hero-ctas">
-        <a href="#contact" class="btn-primary">✉ &nbsp;Contact Me</a>
+        <a href="#contact" class="btn-primary">✉ &nbsp;Discuss an Engagement</a>
         <a href="https://linkedin.com/in/vishalvsrivastava" target="_blank" class="btn-secondary">🔗 &nbsp;LinkedIn Profile</a>
       </div>
       <div class="hero-pills">
@@ -705,7 +755,7 @@ footer{background:var(--dark);padding:22px 52px;display:flex;justify-content:spa
         <span class="hp on">Passenger Experience</span>
         <span class="hp">AODB · FIDS</span>
         <span class="hp">DigiYatra · Biometrics</span>
-        <span class="hp">AI Transformation</span>
+        <span class="hp on">AI Transformation</span>
         <span class="hp">IATA Working Groups</span>
       </div>
     </div>
@@ -825,31 +875,57 @@ footer{background:var(--dark);padding:22px 52px;display:flex;justify-content:spa
 
 <!-- ═══ ABOUT ═══ -->
 <section class="sec" id="about">
-  <div class="sh"><span class="sh-tag">About</span><h2 class="sh-title">Aviation Transformation From the Inside Out</h2><div class="sh-rule"></div></div>
-  <div class="about-grid">
-    <div>
+  <div class="sh"><span class="sh-tag">About</span><h2 class="sh-title">The Consultant Who Has Run the Operation</h2><div class="sh-rule"></div></div>
+
+  <div class="ab-top">
+    <div class="ab-main">
       <div class="current-role">
         <span class="cr-dot"></span>
-        <span>Currently: <strong>AVP &ndash; Industry Solutions (Aviation)</strong> &middot; Aionos, an InterGlobe Enterprise &middot; AI &amp; Aviation Advisory</span>
+        <span>Now: <strong>Independent Airline Digital Transformation Consultant</strong> &middot; Since Aug 2026 &middot; Open to new engagements</span>
       </div>
-      <p class="about-quote">"I solve the problems that sit at the intersection of airline operations, airport infrastructure, and digital transformation &mdash; where the complexity is highest, the stakes are real, and generic technology advice does not work."</p>
-      <div class="about-outcomes">
-        <div class="ao-label">What I deliver for organisations</div>
-        <ul class="ao-list">
-          <li>Passenger throughput improvement through self-service redesign, biometric deployment, and flow optimisation</li>
-          <li>Cost reduction through IoT-enabled operational intelligence, process automation, and system consolidation</li>
-          <li>Revenue protection through baggage tracking, disruption management, and customer experience recovery</li>
-          <li>AI adoption that frontline staff actually use &mdash; designed by someone who has been frontline staff</li>
-          <li>Transformation programmes that deliver &mdash; from global policy standards to ground-level execution</li>
-        </ul>
+      <p class="ab-lede">I help airlines and airports turn digital and AI ambition into programmes that work at the counter, on the ramp and in the operations centre.</p>
+      <div class="ab-body">
+        <p>After 25 years inside the industry &mdash; airline Duty Manager, domain lead on SITA&rsquo;s DCS platform, owner of Qatar Airways&rsquo; Ground Services IT across 150+ airports, and digital lead at Delhi Airport &mdash; I now work independently with the leadership teams who make transformation decisions.</p>
+        <p>Clients bring me in when the stakes are operational: an AI initiative that has to survive a real disruption, a self-service or biometric programme that has to scale, a system cutover that cannot fail. I combine an operator&rsquo;s judgement with a consultant&rsquo;s structure and a builder&rsquo;s knowledge of how aviation systems actually work.</p>
       </div>
+      <p class="about-quote">&ldquo;I solve the problems that sit at the intersection of airline operations, airport infrastructure and digital transformation &mdash; where the complexity is highest, the stakes are real, and generic technology advice does not work.&rdquo;</p>
     </div>
-    <div class="about-cards">
-      <div class="ac"><div class="ac-icon">&#127942;</div><h4>Industry Recognition</h4><p>IATA Baggage Working Group (2016) &mdash; shaped Resolution 753, then implemented it across 150+ airports. National DigiYatra benchmark at IGI Delhi.</p></div>
-      <div class="ac"><div class="ac-icon">&#127760;</div><h4>Global Scale</h4><p>Governed airline IT across 150+ airports on every continent. Delivered zero-downtime airport migration. Led national biometric programme for Government of India.</p></div>
-      <div class="ac"><div class="ac-icon">&#128161;</div><h4>Full Ecosystem View</h4><p>Deep hands-on experience across both airline systems and airport operations &mdash; and the strategic advisory layer above both. Very few have worked all three.</p></div>
-      <div class="ac"><div class="ac-icon">&#128200;</div><h4>Measurable Impact</h4><p>&minus;30% check-in queues &middot; +40% fleet utilisation &middot; &minus;14% fuel cost &middot; 50,000 biometric journeys in month one.</p></div>
+
+    <aside class="ab-panel">
+      <div class="ab-panel-lbl">Why an independent advisor</div>
+      <h3 class="ab-panel-title">Every side of the table. No product to sell.</h3>
+      <ul class="ab-sides">
+        <li><span class="ab-side-k">Airline</span><span class="ab-side-v">Air Sahara &middot; Qatar Airways<br><em>Frontline operations to global Ground Services IT</em></span></li>
+        <li><span class="ab-side-k">Airport</span><span class="ab-side-v">Delhi International Airport (GMR)<br><em>DigiYatra, self-service, IoT, airport core systems</em></span></li>
+        <li><span class="ab-side-k">Technology</span><span class="ab-side-v">SITA (via Mindtree) &middot; Netcon &middot; AIONOS<br><em>Product specification, pre-sales, AI solutions</em></span></li>
+      </ul>
+      <div class="ab-neutral"><span class="ab-check">&#10003;</span>Vendor-neutral recommendations &mdash; I know the platforms from the inside, and I am not paid to sell any of them.</div>
+    </aside>
+  </div>
+
+  <div class="ab-block">
+    <div class="ao-label">How I engage</div>
+    <div class="ab-offers">
+      <div class="ab-offer"><span class="ab-num">01</span><h4>Opportunity Diagnostic</h4><p>Map where the operation loses time, money or passengers &mdash; and where AI genuinely pays back.</p><div class="ab-out">Prioritised use-case portfolio &amp; value case</div></div>
+      <div class="ab-offer"><span class="ab-num">02</span><h4>Roadmap &amp; Business Case</h4><p>Sequence initiatives by value, feasibility and adoption readiness, and build the case the board will fund.</p><div class="ab-out">Transformation roadmap &amp; investment case</div></div>
+      <div class="ab-offer"><span class="ab-num">03</span><h4>Programme &amp; Vendor Assurance</h4><p>Requirements, RFPs and vendor selection, ORAT and cutover readiness, independent programme reviews.</p><div class="ab-out">Go-lives without surprises</div></div>
+      <div class="ab-offer"><span class="ab-num">04</span><h4>Retained CXO Advisory</h4><p>A standing aviation-operations voice for leadership teams and aviation technology firms on digital and AI decisions.</p><div class="ab-out">On-call judgement, month to month</div></div>
     </div>
+  </div>
+
+  <div class="ab-block">
+    <div class="ao-label">How I work</div>
+    <ol class="ab-steps">
+      <li><span class="ab-step-n">1</span><h4>Start on the floor</h4><p>Walk the process with the agents, controllers and duty managers before drawing a single slide.</p></li>
+      <li><span class="ab-step-n">2</span><h4>Size the value</h4><p>Frame every initiative in metrics a COO recognises: queue time, turnaround, mishandled bags, cost per passenger.</p></li>
+      <li><span class="ab-step-n">3</span><h4>Design for adoption</h4><p>Build around what a frontline team needs at 2&nbsp;AM during a disruption &mdash; not what demos well.</p></li>
+      <li><span class="ab-step-n">4</span><h4>Prove, then scale</h4><p>Pilot with parallel operations, then roll out &mdash; the approach that cut DigiYatra&rsquo;s pilot-to-production cycle by 50%.</p></li>
+    </ol>
+  </div>
+
+  <div class="ab-cta">
+    <p><strong>Have a transformation in motion?</strong> Tell me the problem &mdash; we will work out the rest together.</p>
+    <a href="#contact" class="btn-primary">Start a Conversation &rarr;</a>
   </div>
 </section>
 
@@ -872,7 +948,6 @@ footer{background:var(--dark);padding:22px 52px;display:flex;justify-content:spa
 </nav>
 
 <!-- ═══ ABOUT ═══ -->
-<
 <section class="sec bg" id="casestudies">
   <div class="sh"><span class="sh-tag">Transformation Projects</span><h2 class="sh-title">Case Studies</h2><div class="sh-rule"></div></div>
   <p class="sh-sub">Four programmes that illustrate the combination of operational understanding, technology delivery, and measurable business impact. Click each row to expand.</p>
@@ -1103,7 +1178,7 @@ footer{background:var(--dark);padding:22px 52px;display:flex;justify-content:spa
         <span class="cs-num">05</span>
         <div class="cs-tag">Advisory · AI Strategy · Capability Architecture</div>
         <h3>Airport &amp; Airline Digital Capability Design — CXO-Level Advisory</h3>
-        <p>Strategic advisory · Airlines &amp; airports · 2023–Present (Netcon &amp; Aionos)</p>
+        <p>Strategic advisory · Airlines &amp; airports · 2023–Present (Netcon, Aionos &amp; independent practice)</p>
       </div>
       <div class="cs-stats">
         <div class="cs-stat"><span class="v">−40%</span><div class="l">Discovery-to-pilot cycle</div></div>
@@ -1128,7 +1203,7 @@ footer{background:var(--dark);padding:22px 52px;display:flex;justify-content:spa
             <div class="cs-row-preview">Domain-fluent advisor bridging operations realities and AI investment decisions</div>
             <span class="cs-chevron">▼</span>
           </div>
-          <div class="cs-row-detail"><p>As GM – Airport Systems &amp; Solutions at Netcon Technologies (2023–2025) and AVP – Industry Solutions at Aionos (2025–present), engaged with airline and airport CXO teams to design AI-led transformation roadmaps grounded in operational knowledge.</p><ul><li>Capability design reviews — mapping the gap between current operational state and digital potential, identifying where AI delivers genuine value versus where it adds complexity without payoff</li><li>Architecture blueprints for AI applications: passenger journey optimisation, AI disruption management, ground operations intelligence, and airside efficiency</li><li>Functional analysis across Flight Operations, Ground Services, and Revenue Management to define where data fragmentation creates the most business risk — and where targeted AI application can reduce it</li><li>Business case design that translates AI deployment outcomes into measurable operational and commercial metrics that boards and COOs recognise</li></ul></div>
+          <div class="cs-row-detail"><p>As GM – Airport Systems &amp; Solutions at Netcon Technologies (2023–2025) AVP – Industry Solutions at Aionos (2025–2026), and now as an independent consultant (2026–present), engaged with airline and airport CXO teams to design AI-led transformation roadmaps grounded in operational knowledge.</p><ul><li>Capability design reviews — mapping the gap between current operational state and digital potential, identifying where AI delivers genuine value versus where it adds complexity without payoff</li><li>Architecture blueprints for AI applications: passenger journey optimisation, AI disruption management, ground operations intelligence, and airside efficiency</li><li>Functional analysis across Flight Operations, Ground Services, and Revenue Management to define where data fragmentation creates the most business risk — and where targeted AI application can reduce it</li><li>Business case design that translates AI deployment outcomes into measurable operational and commercial metrics that boards and COOs recognise</li></ul></div>
         </div>
         <div class="cs-row" id="cs5r3">
           <div class="cs-row-head" onclick="toggleCS('cs5r3')">
@@ -1268,7 +1343,7 @@ footer{background:var(--dark);padding:22px 52px;display:flex;justify-content:spa
           <span class="etag hl">IoT Airside Fleet Management</span><span class="etag hl">Aircraft Turnaround (IoT)</span>
           <span class="etag">Process Automation</span><span class="etag">Business Case Design</span>
         </div>
-        <div id="eb5-detail" style="display:none;margin-top:10px;font-size:12.5px;color:var(--mid);line-height:1.65;">Current focus at Aionos — AI Passenger Concierge and AI-driven disruption management are the most operationally impactful near-term applications. The value of 25 years of operations experience in an AI advisory role is knowing which problems are worth solving and which solutions will actually be adopted.</div>
+        <div id="eb5-detail" style="display:none;margin-top:10px;font-size:12.5px;color:var(--mid);line-height:1.65;">Current consulting focus — AI Passenger Concierge and AI-driven disruption management are the most operationally impactful near-term applications. The value of 25 years of operations experience in an AI advisory role is knowing which problems are worth solving and which solutions will actually be adopted.</div>
       </div>
     </div>
     <div class="exp-sec">
@@ -1289,7 +1364,8 @@ footer{background:var(--dark);padding:22px 52px;display:flex;justify-content:spa
         <div class="sitem hl">IGI Delhi / DIAL (4.5 yrs)</div>
         <div class="sitem">Air Sahara (7 yrs)</div>
         <div class="sitem">Netcon Technologies (2 yrs)</div>
-        <div class="sitem">Aionos (current)</div>
+        <div class="sitem">Aionos (2025–26)</div>
+        <div class="sitem">Independent consulting (current)</div>
       </div>
       <div class="side-block">
         <h4>IATA · 2016</h4>
@@ -1345,16 +1421,28 @@ footer{background:var(--dark);padding:22px 52px;display:flex;justify-content:spa
   <p class="sh-sub">A 25-year progression from airline frontline operations through IT product design, global airline systems delivery, airport transformation, and AI advisory.</p>
   <div class="timeline">
 
-    <div class="trow" id="tr1">
-      <div class="trow-l"><span class="trow-period">Nov 2025 – Present</span><div class="trow-org">Aionos · InterGlobe Enterprise</div>
-      <div class="co-pill"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFwAAAAgCAIAAAAQbYi1AAANUklEQVR42u2YeXTUVZbH733vV5WlslRVksq+kkDIDmE3YlC0g+0oiyhHm25HBD0gjuPeo6itNGNr93EZdPTY0ggtwzSoNEElARsICigBSQgEDCRkqySVhKSSSlLL7907f1SgUdLnpOfgf3l/VNV5v995775P3Xe/915kZhgbPxxiDMEYlDEoY1DGoPy0Qxv9q8SEoKq6nEpxYYyVWAoABmBkAQgAwADAlb1O58BgcUKMvDR9bQcBIAAwEzMwAzAiAEpARBh5Q7++MhEzMwAiCkQE/EfmjdZTGAABPaStPHh4eUWFR0cA0pHVpbWJGRD2d3cv2P/1/G2l7+47BAj0E+g9MjHpiCiFkFJKqQmhCURkxaRGNp4JAYQQUkpNSikEIhLRP0pHtFG7CUvE8raWqr4hD7l3NTYsGjeOlE8KDRkZmZgR4KTD0TLkAYSj1bUwp+ja4mAAViSkQBRO12BDwwVHV7dXV2aLOTkxPjE6ChGUUkIIRLyCCAsUBHDmfKO9uVnX9ciIyJSUxEhLuP/plS//E1AYQAArwPcazwwJQp/YeKr21nFpgSgJQSIgoIYIAHdmZBzuGbCjWDkz/5r7iCKlSdnZ3fOXHbsOH/q2rdfZr4hYBAvNagrIy0pfeMe8guwsIrp8NYhYCKxvan39vQ+//a5Gsk8KTSlltYbNLpqxdOG/xERHXX3ncGQX4h98K1aawK+7nXN3704MtaLX09LW+fmin98QF6MrHhgccDr7GNFoDDAaDCxpSFfWQKMpyATXKKiw3waUR6uq/vDWhu97+3piEvS4KEN4cBAp/WI/tXWEd3daSS25c/799ywi0gElACNg+8We1b/+bXdn56/uur1wUoGmGc7VN+zeV3Hg4MFXXnzqtrk3j/b6MIB/RQRgBMEIIP5YX+vu8z4xI5v1gYfOt26pPnlDXAwiMVFTi72yuuZUbZ29rRtAeaScUTBx7ZP/NqJz/n+gEGtCfltT/fTad3tMAV1zi6bl5i9Jjs8MN4Em2/v6K+rq9hw40n6h/f3/2YFe/V/vu9tLSmNAKT7dXXah8cK655665frp/tUmpieXzJ1dXX1qwsQMghHkQBspLPlPgsQMxDqiUYiqPtf2xtY4m2V+ok2AeiXGuqPu/MppU/IsZnN4WNGMKUUzpvT09dedu3Ck8vhfvij3eNzXykeACRF7nANvvLXhosnQX3zd8zfNWpEYD0AADCDzgoNuiYm5OzPrPzZ+1ELqw093TRyfNmPWVKXrAFB79nx8rG3m1ElKKQBGRGYySFlYkMsAzHy1N4+gPojoJd3R7xSIQgpNIDD/ubHB1a9+kZpiMxojjUF3T0h19A38ufoEIvoUKSImsoSFTJuc+8iKX8XZbKTzVaxBJ+VTStEIosSXhZP5R7rATIi4Y3fZufYuZ2H2kzdOX5EYT0opQp2Ej0hn1n3e3KiIN5b9MjrCPBBo2LDjE4/uE1IAgNEQODjkcQ0MSimJGYWU0kAgdCLgkbOGEaA4unruf/mtn/1hw+P/W7r34JEBV18L4EdNbaZgcU9qMgMBw70TJ8SZQnecPN88OKAJgUKgEMyglE7EZnMEqR+cm0ghsiakYVgRgYj47zgYAYiYFCHiJflgPxshpNunHzx02JEQlZeXc39SklI6CiEFagINAiVKzWDUdTXOar7rtpsIDOfr286c+R5RAEBu1viOrp7NWz5WigyagZiJSABoYjhZGVVM2XO8suxcE06dvLHpXOXWT5LjbTIzvQ/53uum51vC3fqQBgHZ4eHzM8a9c/jYzqqaVTOnExEIgYiIKATaIszOnotXZn1CSJ30kzVnOx0OszU8OyvLFBhITIgCARQgK12TGgD2u4a6nb1GgzHOFiEQFCkQsqW1ze646M3MKElLDgDwgsS/x6rhH1ITzDxnUt5Wq7m3ubWq9vv8nGxFvttvnnPk0LGtO3bauzt+uWhhQU6mEAjARLoQhtHmKYXZOemFZ08FeWM63YOg6lqbLU2OwpDAEA/Vh1vSUpN0ACD9nvyJW45XbzlWvbRwcqhB80civ9fHRUdehqKUklKeOnPud+98UFNXpxlQ98nUpPjHly+dNaWAiIQQju6LL73y6qI7F1afPL3ny/1DrkGpGSbn5z764H1xMTYA6Ol19rt9GB6WHhoMwICEIK6QNrqEh+JCQy0RZkdTU3dvj//OWsNC1z732Nt/2ly+/2DlN99Nzc/7Wcmc2UXTgzWDf/erCcgXX3zxR1ORYaEledlzk5MXJ6fNzM7oNJtrFZl8gw3fnS7dd2DINTQxIz0wMCAmNOS4ve1v35+fZovMjItRxEIAMwshWts7LjS3zLvpBv+uDS0tjzz3gtdHT6x68IElC2cW5tecOv1J6a68vLz46CgA6Ozp/Wj7Z1/u/9rear9p9ux5c4tDzRFl+ypa7W03zr5OCtFi7yiv+GYgNf7nBbnpgUHAPoFXQmFgREBGAMJPD3ztaO8oTE+bMXUyAyKwKSigeOb0wtw8xepY1anSvX87caomPiYmPiaaiEaVvDFzQrApIdgEsbEAE94MDqoxh2/Iykjs85Tv/2rbjp179lesfmjZjUXTlk7N/+zE6U2HK0vyszQhmQGQAcAWEalJ/8qEKN/fun3I41v/n89mpCQAQGZaam5m+opHn3nvwy3r1z1v1KTBIJkxJzPr+Sceio6wAsACAAGqtGzvheaW8akpoeawEE3zuNwXXG4wgw6ahCtzVjGcQ7Bo63d29/Rq0mAxW/zPUEhmBuCCnAkFORMaFrds2fVZ6Rd7n3rhlTWPryoumjmqQIuIxKArHxH/1W7f09JYEGO5qyB/7uxprz7/2Pvrfz+9qHDd6+vXvvnOnJSkkszx5XUNh843SEQiRpQAEBlpCQ4KAAApDc4+13fHT9xSfH1GSoLu9RApr88TZbXeOq/kdO3ZlrZ2/z/t8QxOKciOjrB6PW6P18vMhZPzPT5fZ9dFAIiJi46whQW3tpZdaPQBAdMPhBRBIenkQ8SDNac7erojpMjITPefxf+JiEqRUio1KeHZlQ8+99hqYnp707aO3r5RQWFgQNZQKgEbG5oZxLKUVBOAR/fqrNJTEp95aMXG9b/3ur2/fXnd5LBQTTN+VHEMAFCQv1i2hIeGh5n8F93V53IPeuNio4kIhUAhpdSIKCE2VtdVf59zeEcBXp+HmaUmpCYRURNAILzEAGANDLx+xlRbU3tVdfXm1o4AaWA1XPMyAxOjrhulsck1sOnzLwO9nBIXlZ+dCQB4KWQws5RCSkmkSPfcNmd2cfHsRnv7mbPnRucpAEwEQhzv6dljb081mRcnJDKDURokCCJSihJibS89/ej8BfMdNVW2IdfB6rNVzXYBkhUDQIjJFGGxKCIACA41GQMDOxzdQggiJMX+ms3e3iE0LSQ0FAAQkEDAcEEvLpvhfwQARLRgXkmi1Rxy/PSr+77a3NYk/KUuAiIIgZpmrHU6V23Y1NHWE+T23XXnHcFGIxEhAPu7DYhK6aSIQSgCAIi1RbHP53MPjQoK+SMWwNv19QO6/oukxGijgYgQ2e+KQqBi0pU+qyD/tV8/tqp4BnW1bSkrh2HZxwCjwWaNUIqZ9fDw0IL8iXsr9jd2tBuMmpRgNBh7XQNflJVnp6ckxMcBgAQEFoIvSywBAAshACQTAPhIRUeaVz+8zHqxO2T/kTWl5fccOf5JR+fZwcH6oaHDXV3rvvlm+X9vbKpuMHR3zr+1+ObiIn8E1Yl+9+Y7T77wcluXQ0pNSCEFGowBA0PuyqPHzOEhyakpo6t9mDUUta6BnW2dkYFBi9MS/Ik2ASJcNlygQNJ9gQZ8ZPGC3LRxb3ywua6pNSMp3q840VERQApAEwzLlyw5WnnimTVrH35g2bjkeLuj6782bmttczz58PIAKYf9QbAfOsBwqwhhOPUBACmETur6aZN/88TqV9/9wFdWUVFb/1VidJApLEiXQ3093rZ2i7070j14xx03rrz/PvL3kgCYwaNoz4HD5xqa588rmVZYEBJqamxp2/rxzm9P1Kx8YGlGUvyooBCAAPygrtbZ6Vyek55jMimdUYLgy4kSIACh/8is6545hXlRlofr6xvSE+P8QhAXGy0REYUiykhLeu3FNa+//f7Tv3nNFBzkGhyIiop6ac0z0wsn6UrXpKZIDbgHfT7vlQW6IuUaGFRK+SdRiiHy3TBrWkpq4rZP/3q0ssrR1DoIQExhwmAJNGbkJM+/vaRociGzD1ECCgbQBD/776sm5eaUlpZt2rz9wy3bwWgYdHsjLOGPrlpx74J5ikhelaqM0DpgZkDc0dp8osO1ZHzSRFOwTiAF/Kh/xzBcSykAQR4pAryKDAIRkYGUTlJIFMgARLoUmsvtOXKsuqXVHmOLmjEp2xwe7vdwRBj0eD7+fE9BVmbuhAy/PYjY2tlVvu+rkuLrYm1RxISIwKwzG4QEgPaLPWfq6h0d7Ur3WaKs6YnJ6SnJ/uiDghHEsDyxAgBE6dV9tWfrzzc2ur3e6ChbXtb4KIsZgIlB4Cj7KWPd/LExBmUMyhiUMSg/4fg/pUXILZcBzE8AAAAASUVORK5CYII=" alt="aionos" style="height:22px;width:auto;max-width:140px;object-fit:contain;display:block;"></div></div>
+    <div class="trow" id="tr0">
+      <div class="trow-l"><span class="trow-period">Aug 2026 – Present</span><div class="trow-org">Independent</div></div>
       <div class="trow-dot on"></div>
+      <div class="trow-b">
+        <div class="trow-role">Airline Digital Transformation Consultant</div>
+        <span class="ttag t-ai">Consulting</span>
+        <p class="trow-brief">Advising airlines, airports and aviation technology providers on digital and AI transformation across passenger experience, airport operations, baggage, self-service and disruption management.</p>
+        <button class="trow-toggle" onclick="toggleRow('tr0')">View detail <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 3.5L5 6.5L8 3.5" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/></svg></button>
+        <div class="trow-detail"><ul class="trow-ul"><li>Opportunity diagnostics that identify where AI and digital investment genuinely pays back in airline and airport operations</li><li>Transformation roadmaps and business cases prioritised by value, feasibility and adoption readiness</li><li>Programme and vendor assurance: requirements, RFPs, vendor selection, ORAT and cutover readiness</li><li>Retained advisory for CXO teams and aviation technology firms</li></ul></div>
+      </div>
+    </div>
+
+    <div class="trow" id="tr1">
+      <div class="trow-l"><span class="trow-period">Nov 2025 – Jul 2026</span><div class="trow-org">Aionos · InterGlobe Enterprise</div>
+      <div class="co-pill"><img src="data:image/png;base64,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" alt="aionos" style="height:22px;width:auto;max-width:140px;object-fit:contain;display:block;"></div></div>
+      <div class="trow-dot"></div>
       <div class="trow-b">
         <div class="trow-role">AVP – Industry Solutions (Aviation)</div>
         <span class="ttag t-ai">AI &amp; Advisory</span>
-        <p class="trow-brief">Partnering with a leading Indian airline and a major international airport to identify and shape AI-enabled solutions for passenger experience, airport operations, and enterprise productivity.</p>
+        <p class="trow-brief">Partnered with a leading Indian airline and a major international airport to identify and shape AI-enabled solutions for passenger experience, airport operations, and enterprise productivity.</p>
         <button class="trow-toggle" onclick="toggleRow('tr1')">View detail <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 3.5L5 6.5L8 3.5" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/></svg></button>
-        <div class="trow-detail"><ul class="trow-ul"><li>Reduced the solution discovery-to-pilot cycle by 40% for partner airline and airport engagements</li><li>Defined aviation-specific AI use cases across passenger services, airport operations, and enterprise functions, prioritised by business value, operational feasibility, and adoption readiness</li><li>Work with product, engineering, and business stakeholders to translate aviation domain expertise into AI-enabled solutions that reach enterprise-scale adoption</li></ul></div>
+        <div class="trow-detail"><ul class="trow-ul"><li>Reduced the solution discovery-to-pilot cycle by 40% for partner airline and airport engagements</li><li>Defined aviation-specific AI use cases across passenger services, airport operations, and enterprise functions, prioritised by business value, operational feasibility, and adoption readiness</li><li>Worked with product, engineering, and business stakeholders to translate aviation domain expertise into AI-enabled solutions that reach enterprise-scale adoption</li></ul></div>
       </div>
     </div>
 
@@ -1711,7 +1799,7 @@ document.addEventListener('keydown',e=>{
   <div class="contact-grid">
     <div>
       <p class="contact-intro">"If you are navigating a transformation where the technology exists but the operational grounding is missing — a new airport opening, a self-service programme that needs to work at scale, an AI initiative that has to survive contact with the real world — I would like to be part of that conversation."</p>
-      <p class="contact-note">Available for VP/SVP advisory roles, transformation leadership engagements, and strategic consulting across airlines, airports, and aviation technology organisations. Based in New Delhi / NCR — available regionally and internationally. Fluent in boardroom conversations, operations reviews, and technical design sessions.</p>
+      <p class="contact-note">Available for consulting engagements, retained advisory and transformation leadership roles across airlines, airports and aviation technology organisations. Based in New Delhi / NCR — working regionally and internationally. Fluent in boardroom conversations, operations reviews, and technical design sessions.</p>
     </div>
     <div class="contact-links">
       <a class="cl" href="mailto:vishal.vsrivastava@gmail.com">
@@ -1733,7 +1821,7 @@ document.addEventListener('keydown',e=>{
 <!-- ═══ FOOTER ═══ -->
 <footer>
   <div class="f-name">Vishal Srivastava</div>
-  <div class="f-note">Aviation Domain Expert · New Delhi, India</div>
+  <div class="f-note">Airline Digital Transformation Consultant · New Delhi, India</div>
   <div class="f-links">
     <a href="mailto:vishal.vsrivastava@gmail.com">Email</a>
     <a href="https://linkedin.com/in/vishalvsrivastava" target="_blank">LinkedIn</a>
